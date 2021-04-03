@@ -1,0 +1,17 @@
+// Button One
+.btn-one {
+    font-size: 1.3rem;
+    color: #f14705;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    background-color: #fff;
+    padding: 1.5rem 3.5rem;
+    margin-right: 2rem;
+    border-radius: 4px;
+    transition: all 0.4s;
+    &:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+        border-radius: 23px;
+    }
+}

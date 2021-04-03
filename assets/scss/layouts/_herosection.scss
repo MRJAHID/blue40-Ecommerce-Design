@@ -1,0 +1,110 @@
+// Flash Deal
+.heroflash-product {
+    border: 1px solid #e8e8e8;
+    height: 440px;
+
+    &-slide {
+        h3 {
+            font-size: 1.6rem;
+        }
+    }
+    &-title {
+        font: 400 1.5rem 'Open Sans', sans-serif;
+        letter-spacing: -0.01em;
+        line-height: 1.35;
+        margin-bottom: 0.72rem;
+    }
+    &-default {
+        a {
+            color: #222529;
+            white-space: nowrap;
+        }
+    }
+
+    .heroflash-ratings-container {
+        line-height: 1;
+        margin: 0 0 10px 1px;
+        .heroflash-product-ratings {
+            height: 13px;
+        }
+        .heroflash-ratings {
+            &::before {
+                content: '\2605''\2605''\2605''\2605''\2605';
+                color: #6a6a6d;
+                font-size: large;
+                font-weight: 700;
+            }
+        }
+    }
+    .heroflash-ratings-container .heroflash-product-ratings,
+    .heroflash-ratings-container .heroflash-ratings {
+        position: relative;
+        display: inline-block;
+        font-size: 13px;
+        letter-spacing: 0.1em;
+    }
+    .heroflash-price-box {
+        margin-bottom: 1.2rem;
+    }
+
+    .heroflash-old-price {
+        font-size: 1.4rem;
+        letter-spacing: 0.005em;
+        color: #999;
+        font-family: 'Open Sans';
+        margin-right: 3px;
+    }
+    .heroflash-product-price {
+        color: #465157;
+        font: 600 1.8rem/0.8 'Open Sans', sans-serif;
+    }
+    .heroflash-count-down-panel {
+        color: #444;
+        background-color: #f4f4f4;
+        border-radius: 30px;
+        padding: 0.8rem 1rem;
+    }
+    .heroflash-count-down-panel h4 {
+        font-size: 1.1rem;
+        letter-spacing: 0.025em;
+    }
+    .heroflash-count-down-panel span {
+        font-size: 1.3rem;
+        font-weight: 700;
+        letter-spacing: 0.025em;
+    }
+}
+.heroflash-product .owl-dots {
+    position: absolute;
+    bottom: 2rem;
+    right: 50%;
+    transform: translateX(50%);
+}
+.heroflash-product.owl-carousel.owl-theme .owl-dots .owl-dot span {
+    position: relative;
+    display: block;
+    width: 14px;
+    height: 14px;
+    border: 2px solid;
+    background: none;
+    margin: 5px 2px;
+    border-radius: 7px;
+    border-color: #e8e8e8;
+    transition: all 0.2s;
+}
+.heroflash-product.owl-carousel.owl-theme .owl-dots .owl-dot.active span,
+.heroflash-product.owl-carousel.owl-theme .owl-dots .owl-dot:hover span {
+    background: none;
+    border-color: #222529;
+}
+.heroflash-product.owl-carousel.owl-theme .owl-dots .owl-dot.active span:after,
+.heroflash-product.owl-carousel.owl-theme .owl-dots .owl-dot:hover span:after {
+    content: '';
+    position: absolute;
+    left: 3px;
+    bottom: 3px;
+    right: 3px;
+    top: 3px;
+    border-radius: 10px;
+    background-color: #222529;
+}

@@ -1,0 +1,39 @@
+.banner-product__content {
+    margin-bottom: 0.8rem;
+    padding: 5rem 3rem;
+}
+.banner-product__content h2 {
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin: 1.8rem 0;
+    line-height: 1.2;
+}
+.banner-product__content h3,
+.banner-product__content .product-price {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    padding: 0.5rem 1rem;
+}
+
+.banner-product__content .old-price {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: #222529;
+    margin-left: 5px;
+}
+.banner-product__content .banner-product__primary-background h3,
+.banner-product__content .banner-product__primary-background .product-price {
+    background-color: #01abec;
+}
+.banner-product__content .banner-product__secondary-background h3,
+.banner-product__content .banner-product__secondary-background .product-price {
+    background-color: #188268;
+}
+@media (max-width: 991px) {
+    .banner-product__content {
+        margin-bottom: 4rem;
+    }
+}

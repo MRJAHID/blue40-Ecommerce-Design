@@ -1,0 +1,2913 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>E-Project</title>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind Default Css -->
+        <link rel="stylesheet" href="./assets/dist/css/tailwind.css" />
+        <!-- Custom Css File  -->
+        <link rel="stylesheet" href="./assets/css/index.css" />
+        <!-- Google Material Icon -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+            rel="stylesheet"
+        />
+        <!-- OwlCarousel -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <!-- ========= Start Heading Section ======= -->
+            <header class="header sticky top-0 z-50">
+                <div class="header__content py-6">
+                    <div class="w-full mx-auto px-16 flex items-center justify-between relative">
+                        <!-- Header left side -->
+                        <div class="header__left">
+                            <div class="flex">
+                                <div class="side-nav__hamburger cursor-pointer">
+                                    <span
+                                        class="material-icons-outlined text-white mr-9"
+                                        style="font-size: 31px"
+                                    >
+                                        menu
+                                    </span>
+                                </div>
+                                <div>
+                                    <a href="index-2.html" class="logo block">
+                                        <img
+                                            src="./assets/img/logo.png"
+                                            class="block max-w-full h-auto"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .header-left -->
+
+                        <!-- Header Center -->
+                        <div class="header__center flex flex-col items-start">
+                            <div class="header__search relative m-0 p-0 border-none">
+                                <a href="#" class="header__search--toggle" role="button">
+                                    <span class="material-icons-outlined f-icon"> search </span>
+                                </a>
+                                <form action="#" method="get">
+                                    <div class="header__search--wrapper">
+                                        <input
+                                            type="search"
+                                            class="header__search--input-box"
+                                            name="q"
+                                            id="q"
+                                            placeholder="Search what you want..."
+                                            required
+                                        />
+                                        <!-- End .select-custom -->
+                                        <button class="header__search--btn" type="submit">
+                                            <span
+                                                class="material-icons-outlined text-gray-500 w-8 h-8"
+                                            >
+                                                search
+                                            </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End .header-center -->
+
+                        <!-- Header Right side -->
+                        <div class="header__right flex items-center">
+                            <a href="login.html">
+                                <div
+                                    class="header__user flex items-center mr-8 text-white cursor-pointer"
+                                >
+                                    <span class="material-icons-outlined header__user--icon1">
+                                        perm_identity
+                                    </span>
+                                    <div class="header__userinfo text-white">
+                                        <span class="text-lg font-normal">Hello!</span>
+                                        <h4 class="text-xl font-bold mb-0">My Account</h4>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="header__user--icon">
+                                <span class="material-icons-outlined"> favorite_border </span></a
+                            >
+                            <a href="#" class="header__user--icon"
+                                ><span class="material-icons-outlined"> shopping_bag </span></a
+                            >
+                        </div>
+                        <!-- End Header Right side -->
+                    </div>
+                </div>
+            </header>
+            <!-- ========= END Heading Section ======= -->
+
+            <!-- ========= Start Main Home Wrapper ======= -->
+            <main class="main-wrapper">
+                <div class="mx-auto px-8 flex items-center">
+                    <!-- ========= Start SideNav Section ======= -->
+                    <section>
+                        <nav class="side-nav">
+                            <div class="sidebar-navigation">
+                                <strong class="title"
+                                    ><span
+                                        class="material-icons-outlined pr-2"
+                                        style="font-size: 20px"
+                                    >
+                                        layers
+                                    </span>
+                                    Sidebar Menu</strong
+                                >
+                                <ul>
+                                    <li>
+                                        <a href="#" class="flex justify-between"
+                                            >Office Products
+                                            <span
+                                                style="font-size: 16px"
+                                                class="material-icons-outlined"
+                                            >
+                                                expand_more
+                                            </span></a
+                                        >
+                                        <ul>
+                                            <li>
+                                                <a href="#" class="flex justify-between"
+                                                    >Writing
+                                                    <span
+                                                        style="font-size: 16px"
+                                                        class="material-icons-outlined"
+                                                    >
+                                                        expand_more
+                                                    </span></a
+                                                >
+                                                <ul>
+                                                    <li><a href="#">Colors</a></li>
+                                                    <li><a href="#">Pens</a></li>
+                                                    <li><a href="#">Pencils</a></li>
+                                                    <li><a href="#">Notebooks</a></li>
+                                                    <li>
+                                                        <a href="#" class="flex justify-between"
+                                                            >Activity
+                                                            <span
+                                                                style="font-size: 16px"
+                                                                class="material-icons-outlined"
+                                                            >
+                                                                expand_more
+                                                            </span></a
+                                                        >
+                                                        <ul>
+                                                            <li><a href="#">Mouse</a></li>
+                                                            <li><a href="#">Laptop</a></li>
+                                                            <li><a href="#">Desktop</a></li>
+                                                            <li><a href="#">Earphone</a></li>
+                                                            <li><a href="#">Notebooks</a></li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Technology</a></li>
+                                            <li><a href="#">Game</a></li>
+                                            <li><a href="#">Software</a></li>
+                                            <li><a href="#">Internet</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Beauty & Health</a></li>
+                                    <li><a href="#">Home Appliance</a></li>
+                                    <li>
+                                        <a href="#">
+                                            Food
+                                            <span
+                                                style="font-size: 16px"
+                                                class="material-icons-outlined"
+                                            >
+                                                expand_more
+                                            </span></a
+                                        >
+                                        <ul>
+                                            <li><a href="#">All Reviews</a></li>
+                                            <li><a href="#">Galleries</a></li>
+                                            <!-- <li class="selected"><a href="#">How To</a></li> -->
+                                            <li><a href="#">Mobile</a></li>
+                                            <li><a href="#">Software</a></li>
+                                            <li><a href="#">Lists</a></li>
+                                            <li><a href="#">Game</a></li>
+                                            <li><a href="#">Technology</a></li>
+                                            <li><a href="#">Social Media</a></li>
+                                            <li><a href="#">Internet</a></li>
+                                            <li><a href="#">Security</a></li>
+                                            <li><a href="#">Comparison</a></li>
+                                            <li><a href="#">Campaign</a></li>
+                                            <li><a href="#">Hardware</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Baby Care</a></li>
+                                    <li><a href="#">Clothings</a></li>
+                                    <li><a href="#">T-Shirts</a></li>
+                                    <li><a href="#">Pet Care</a></li>
+                                    <li><a href="#">Home Cleaning</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </section>
+                    <!-- ========= END SideNav Section ======= -->
+                    <section class="main-content mx-auto flex flex-col">
+                        <!-- ===== Start Hero Section ===== -->
+                        <section class="container mx-auto px-2 flex items-center">
+                            <div class="heroslider-section w-full flex items-center">
+                                <!-- Slider -->
+                                <div class="w-9/12">
+                                    <div
+                                        class="heroslider-content w-full mb-8 owl-carousel owl-theme"
+                                    >
+                                        <!-- 1 -->
+                                        <a href="#">
+                                            <div
+                                                class="heroslider-content__slide"
+                                                style="
+                                                    background-image: url('./assets/img/slider/slider1.jpg');
+                                                "
+                                            ></div>
+                                        </a>
+                                        <!-- 2 -->
+                                        <a href="#">
+                                            <div
+                                                class="heroslider-content__slide"
+                                                style="
+                                                    background-image: url('./assets/img/slider/slider2.jpg');
+                                                "
+                                            ></div>
+                                        </a>
+                                        <!-- 3 -->
+                                        <a href="#">
+                                            <div
+                                                class="heroslider-content__slide"
+                                                style="
+                                                    background-image: url('./assets/img/slider/slider4.jpg');
+                                                "
+                                            >
+                                                <div class="heroslider-content__slide--content">
+                                                    <h2
+                                                        class="text-right uppercase mb-0 text-gray-800"
+                                                    >
+                                                        electronic<br />deals
+                                                    </h2>
+                                                    <div class="skew-box-group">
+                                                        <span
+                                                            class="skew-box text-3xl text-white bg-gray-800 inline-block mb-4 py-3 px-4"
+                                                            >Exclusive COUPON</span
+                                                        >
+                                                        <h3 class="sale-off skew-box">
+                                                            <span>$100</span>off
+                                                        </h3>
+                                                    </div>
+                                                    <button class="btn-one">View All Now</button>
+                                                </div>
+                                                <p
+                                                    class="absolute bottom-4 right-4 text-lg tracking-wider text-gray-400 mb-0"
+                                                >
+                                                    * Only 200 Available
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- FlashDeal -->
+                                <div class="w-3/12 pl-8">
+                                    <div
+                                        class="heroflash-product mb-8 owl-carousel owl-theme"
+                                        data-toggle="owl"
+                                    >
+                                        <div
+                                            class="heroflash-product-slide p-6 flex flex-col items-center"
+                                        >
+                                            <h3 class="font-bold text-gray-800">Flash Deals</h3>
+                                            <div class="heroflash-product-default mb-0">
+                                                <figure class="mb-10">
+                                                    <a
+                                                        href="product.html"
+                                                        class="overflow-ellipsis overflow-hidden"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/flashdeal1.jpg"
+                                                            class="h-auto w-auto m-auto"
+                                                        />
+                                                    </a>
+                                                </figure>
+                                                <div
+                                                    class="heroflash-product-details flex flex-col items-center justify-center"
+                                                >
+                                                    <h2
+                                                        class="heroflash-product-title overflow-hidden overflow-ellipsis"
+                                                    >
+                                                        <a
+                                                            href="product.html"
+                                                            class="text-gray-800 font-medium"
+                                                            >1080p Wifi IP Camera</a
+                                                        >
+                                                    </h2>
+                                                    <div
+                                                        class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
+                                                    >
+                                                        <div
+                                                            class="heroflash-product-ratings w-full text-center"
+                                                        >
+                                                            <span
+                                                                class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
+                                                                style="width: 100%"
+                                                            >
+                                                            </span
+                                                            ><!-- End .ratings -->
+                                                        </div>
+                                                        <!-- End .product-ratings -->
+                                                    </div>
+                                                    <!-- End .product-container -->
+                                                    <div class="heroflash-price-box">
+                                                        <span class="heroflash-product-price"
+                                                            >$49.00</span
+                                                        >
+                                                        <span class="heroflash-old-price"
+                                                            >$59.00</span
+                                                        >
+                                                    </div>
+                                                    <!-- End .price-box -->
+                                                </div>
+                                                <!-- End .product-details -->
+                                            </div>
+                                            <div
+                                                class="heroflash-count-down-panel text-center mt-2"
+                                            >
+                                                <h4 class="font-normal m-0">
+                                                    OFFER ENDS IN:
+                                                    <span
+                                                        class="countdown"
+                                                        data-plugin-countdown=""
+                                                        data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
+                                                        ><span class="days"
+                                                            ><span class="font-bold">237</span>
+                                                            <div class="inline uppercase">
+                                                                DAYS,
+                                                            </div></span
+                                                        >
+                                                        <span class="hours"
+                                                            ><span class="font-bold">20:</span>
+                                                        </span>
+                                                        <span class="minutes"
+                                                            ><span class="font-bold">26:</span>
+                                                        </span>
+                                                        <span class="seconds"
+                                                            ><span class="font-bold">06</span>
+                                                        </span>
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="heroflash-product-slide p-6 flex flex-col items-center"
+                                        >
+                                            <h3 class="font-bold text-gray-800">Flash Deals</h3>
+                                            <div class="heroflash-product-default mb-0">
+                                                <figure class="mb-10">
+                                                    <a
+                                                        href="product.html"
+                                                        class="overflow-ellipsis overflow-hidden"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/flashdeal1.jpg"
+                                                            class="h-auto w-auto m-auto"
+                                                        />
+                                                    </a>
+                                                </figure>
+                                                <div
+                                                    class="heroflash-product-details flex flex-col items-center justify-center"
+                                                >
+                                                    <h2
+                                                        class="heroflash-product-title overflow-hidden overflow-ellipsis"
+                                                    >
+                                                        <a
+                                                            href="product.html"
+                                                            class="text-gray-800 font-medium"
+                                                            >1080p Wifi IP Camera</a
+                                                        >
+                                                    </h2>
+                                                    <div
+                                                        class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
+                                                    >
+                                                        <div
+                                                            class="heroflash-product-ratings w-full text-center"
+                                                        >
+                                                            <span
+                                                                class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
+                                                                style="width: 100%"
+                                                            >
+                                                            </span
+                                                            ><!-- End .ratings -->
+                                                        </div>
+                                                        <!-- End .product-ratings -->
+                                                    </div>
+                                                    <!-- End .product-container -->
+                                                    <div class="heroflash-price-box">
+                                                        <span class="heroflash-product-price"
+                                                            >$49.00</span
+                                                        >
+                                                        <span class="heroflash-old-price"
+                                                            >$59.00</span
+                                                        >
+
+                                                        >
+                                                    </div>
+                                                    <!-- End .price-box -->
+                                                </div>
+                                                <!-- End .product-details -->
+                                            </div>
+                                            <div
+                                                class="heroflash-count-down-panel text-center mt-2"
+                                            >
+                                                <h4 class="font-normal m-0">
+                                                    OFFER ENDS IN:
+                                                    <span
+                                                        class="countdown"
+                                                        data-plugin-countdown=""
+                                                        data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
+                                                        ><span class="days"
+                                                            ><span class="font-bold">237</span>
+                                                            <div class="inline uppercase">
+                                                                DAYS,
+                                                            </div></span
+                                                        >
+                                                        <span class="hours"
+                                                            ><span class="font-bold">20:</span>
+                                                        </span>
+                                                        <span class="minutes"
+                                                            ><span class="font-bold">26:</span>
+                                                        </span>
+                                                        <span class="seconds"
+                                                            ><span class="font-bold">06</span>
+                                                        </span>
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="heroflash-product-slide p-6 flex flex-col items-center"
+                                        >
+                                            <h3 class="font-bold text-gray-800">Flash Deals</h3>
+                                            <div class="heroflash-product-default mb-0">
+                                                <figure class="mb-10">
+                                                    <a
+                                                        href="product.html"
+                                                        class="overflow-ellipsis overflow-hidden"
+                                                    >
+                                                        <img
+                                                            src="./assets/img/flashdeal1.jpg"
+                                                            class="h-auto w-auto m-auto"
+                                                        />
+                                                    </a>
+                                                </figure>
+                                                <div
+                                                    class="heroflash-product-details flex flex-col items-center justify-center"
+                                                >
+                                                    <h2
+                                                        class="heroflash-product-title overflow-hidden overflow-ellipsis"
+                                                    >
+                                                        <a
+                                                            href="product.html"
+                                                            class="text-gray-800 font-medium"
+                                                            >1080p Wifi IP Camera</a
+                                                        >
+                                                    </h2>
+                                                    <div
+                                                        class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
+                                                    >
+                                                        <div
+                                                            class="heroflash-product-ratings w-full text-center"
+                                                        >
+                                                            <span
+                                                                class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
+                                                                style="width: 100%"
+                                                            >
+                                                            </span
+                                                            ><!-- End .ratings -->
+                                                        </div>
+                                                        <!-- End .product-ratings -->
+                                                    </div>
+                                                    <!-- End .product-container -->
+                                                    <div class="heroflash-price-box">
+                                                        <span class="heroflash-product-price"
+                                                            >$49.00</span
+                                                        >
+                                                        <span class="heroflash-old-price"
+                                                            >$59.00</span
+                                                        >
+                                                    </div>
+                                                    <!-- End .price-box -->
+                                                </div>
+                                                <!-- End .product-details -->
+                                            </div>
+                                            <div
+                                                class="heroflash-count-down-panel text-center mt-2"
+                                            >
+                                                <h4 class="font-normal m-0">
+                                                    OFFER ENDS IN:
+                                                    <span
+                                                        class="countdown"
+                                                        data-plugin-countdown=""
+                                                        data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
+                                                        ><span class="days"
+                                                            ><span class="font-bold">237</span>
+                                                            <div class="inline uppercase">
+                                                                DAYS,
+                                                            </div></span
+                                                        >
+                                                        <span class="hours"
+                                                            ><span class="font-bold">20:</span>
+                                                        </span>
+                                                        <span class="minutes"
+                                                            ><span class="font-bold">26:</span>
+                                                        </span>
+                                                        <span class="seconds"
+                                                            ><span class="font-bold">06</span>
+                                                        </span>
+                                                    </span>
+                                                </h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== End Hero Section ===== -->
+                        <!-- ===== Start Shop Section ===== -->
+                        <section
+                            class="container mx-auto px-2 flex flex-col items-center mt-3 mb-12"
+                            id="topBrands"
+                        >
+                            <div class="section-title w-full mb-2 flex justify-between">
+                                <h2>Top Shops</h2>
+                                <p>
+                                    <a
+                                        href="javascript:void(0)"
+                                        class="text-xl pl-4 flex product-view-all-btn"
+                                        style="color: #01abec"
+                                        ><span
+                                            class="material-icons-outlined"
+                                            style="font-size: 17px"
+                                        >
+                                            bolt
+                                        </span>
+                                        View All</a
+                                    >
+                                </p>
+                            </div>
+                            <div
+                                class="top-shop owl-carousel owl-theme text-center flex justify-between w-full"
+                            >
+                                <div class="top-shop__container p-3">
+                                    <a href="#"
+                                        ><div class="top-shop__img">
+                                            <img
+                                                class=""
+                                                src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
+                                                alt="Brands One"
+                                            />
+                                        </div>
+                                        <div class="top-shop__text py-2">
+                                            <p
+                                                title="Smart Gadget"
+                                                class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700"
+                                            >
+                                                Smart Gadget
+                                            </p>
+                                        </div></a
+                                    >
+                                </div>
+                                <div class="top-shop__container p-3">
+                                    <a href="#">
+                                        <div class="top-shop__img">
+                                            <img
+                                                class=""
+                                                src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
+                                                alt="Brands One"
+                                            />
+                                        </div>
+                                        <div class="top-shop__text py-2">
+                                            <p
+                                                title="Smart Gadget"
+                                                class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700"
+                                            >
+                                                Rupok Fashion
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-shop__container p-3">
+                                    <a href="#">
+                                        <div class="top-shop__img">
+                                            <img
+                                                class=""
+                                                src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
+                                                alt="Brands One"
+                                            />
+                                        </div>
+                                        <div class="top-shop__text py-2">
+                                            <p
+                                                title="Smart Gadget"
+                                                class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700"
+                                            >
+                                                Evaly Express
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-shop__container p-3">
+                                    <a href="#">
+                                        <div class="top-shop__img">
+                                            <img
+                                                class=""
+                                                src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
+                                                alt="Brands One"
+                                            />
+                                        </div>
+                                        <div class="top-shop__text py-2">
+                                            <p
+                                                title="Smart Gadget"
+                                                class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700"
+                                            >
+                                                Sports One
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-shop__container p-3">
+                                    <a href="#">
+                                        <div class="top-shop__img">
+                                            <img
+                                                class=""
+                                                src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
+                                                alt="Brands One"
+                                            />
+                                        </div>
+                                        <div class="top-shop__text py-2">
+                                            <p
+                                                title="Smart Gadget"
+                                                class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700"
+                                            >
+                                                E-Zadu
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="top-shop__container p-3">
+                                    <a href="#">
+                                        <div class="top-shop__img">
+                                            <img
+                                                class=""
+                                                src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
+                                                alt="Brands One"
+                                            />
+                                        </div>
+                                        <div class="top-shop__text py-2">
+                                            <p
+                                                title="Smart Gadget"
+                                                class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700"
+                                            >
+                                                Party Wary
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== End Shop  Section ===== -->
+                        <!-- ===== Start Product Panel one Section ===== -->
+                        <section class="container mx-auto px-2 flex flex-col items-center">
+                            <div class="section-title w-full mb-2 flex justify-between">
+                                <h2>Most Viewed Product</h2>
+                                <p>
+                                    <a
+                                        href="javascript:void(0)"
+                                        class="text-xl pl-4 flex product-view-all-btn"
+                                        style="color: #01abec"
+                                        ><span
+                                            class="material-icons-outlined"
+                                            style="font-size: 17px"
+                                        >
+                                            bolt
+                                        </span>
+                                        View All</a
+                                    >
+                                </p>
+                            </div>
+                            <div class="product-panel w-full flex flex-wrap items-center">
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-2.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-5.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-7.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-6.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-7.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-6.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/5 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== End Product Panel one Section ===== -->
+
+                        <!-- ===== Start Product Panel Section ===== -->
+                        <section class="container mx-auto px-2 flex flex-col items-center">
+                            <div class="section-title w-full mb-2 flex justify-between">
+                                <h2>New Arrival Product</h2>
+                                <p>
+                                    <a
+                                        href="javascript:void(0)"
+                                        class="text-xl pl-4 flex product-view-all-btn"
+                                        style="color: #01abec"
+                                        ><span
+                                            class="material-icons-outlined"
+                                            style="font-size: 17px"
+                                        >
+                                            bolt
+                                        </span>
+                                        View All</a
+                                    >
+                                </p>
+                            </div>
+                            <div
+                                class="product-panel owl-carousel owl-theme w-full flex items-center"
+                            >
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-12.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-13.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-4.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-3.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-14.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== End Product Panel Section ===== -->
+                        <!-- ===== Banner Panel Section Start ===== -->
+                        <section class="container mx-auto px-2 flex flex-col items-center">
+                            <div class="banner-product w-full flex space-x-8">
+                                <div class="w-1/2">
+                                    <div
+                                        class="banner-product__content flex justify-between items-center flex-wrap bg-no-repeat bg-gray-100"
+                                        style="
+                                            background-image: url('./assets/img/products/product-banner1.jpg');
+                                            background-position: 50%;
+                                        "
+                                    >
+                                        <h2 class="text-5xl text-gray-800">ACTION <br />CAMERAS</h2>
+                                        <div class="ml-3 banner-product__primary-background">
+                                            <h3 class="skew-box">Starting from</h3>
+                                            <h4 class="skew-box">
+                                                <span class="product-price no-underline py-0 px-4"
+                                                    >$399</span
+                                                ><span class="old-price">$499</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-1/2">
+                                    <div
+                                        class="banner-product__content flex justify-between items-center flex-wrap bg-no-repeat bg-gray-100"
+                                        style="
+                                            background-image: url('./assets/img/products/product-banner2.jpg');
+                                            background-position: 48% 10%;
+                                        "
+                                    >
+                                        <h2 class="text-5xl text-gray-800">FOR ALL <br />STYLES</h2>
+                                        <div class="ml-3 banner-product__secondary-background">
+                                            <h3 class="skew-box">Starting from</h3>
+                                            <h4 class="skew-box">
+                                                <span class="product-price no-underline py-0 px-4"
+                                                    >$399</span
+                                                ><span class="old-price">$499</span>
+                                            </h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== End Banner Panel Section  ===== -->
+                        <!-- ===== Start Product Panel two Section  ===== -->
+                        <section
+                            class="container mx-auto px-2 py-3 flex flex-col items-center bg-gray-50"
+                        >
+                            <div class="container">
+                                <div class="product-panel product-panel2 my-16">
+                                    <div class="section-title mb-2 flex justify-between">
+                                        <h2>Best Sellers on Electronics</h2>
+                                        <p>
+                                            <a
+                                                href="javascript:void(0)"
+                                                class="text-xl pl-4 flex product-view-all-btn"
+                                                style="color: #01abec"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 17px"
+                                                >
+                                                    bolt
+                                                </span>
+                                                View All</a
+                                            >
+                                        </p>
+                                    </div>
+
+                                    <div class="flex product-panel-banner-container margin-2">
+                                        <div
+                                            class="grid-item product-panel-banner relative height-x2 w-1/3"
+                                        >
+                                            <div
+                                                class="product-panel-banner--div owl-carousel owl-theme"
+                                            >
+                                                <a href="#">
+                                                    <img
+                                                        src="./assets/img/products/product-1.jpg"
+                                                    /> </a
+                                                ><a href="#">
+                                                    <img
+                                                        src="./assets/img/products/product-9.jpg"
+                                                    /> </a
+                                                ><a href="#">
+                                                    <img
+                                                        src="./assets/img/products/product-17.jpg"
+                                                    />
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="product-panel flex flex-wrap">
+                                            <div class="grid-item height-x1 w-1/3">
+                                                <div
+                                                    class="product-default inner-quickview inner-icon bg-white"
+                                                >
+                                                    <figure>
+                                                        <a href="product.html">
+                                                            <img
+                                                                src="./assets/img/products/product-13.jpg"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div class="product-details">
+                                                        <h2 class="product-title">
+                                                            <a href="product.html"
+                                                                >Product Short Name</a
+                                                            >
+                                                        </h2>
+                                                        <div class="price-box">
+                                                            <span class="product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="old-price">$59.00</span>
+                                                            <span
+                                                                class="discount-price"
+                                                                style="font-size: 13px"
+                                                                >50%off</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                            </div>
+                                            <div class="grid-item height-x1 w-1/3">
+                                                <div
+                                                    class="product-default inner-quickview inner-icon bg-white"
+                                                >
+                                                    <figure>
+                                                        <a href="product.html">
+                                                            <img
+                                                                src="./assets/img/products/product-14.jpg"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div class="product-details">
+                                                        <h2 class="product-title">
+                                                            <a href="product.html"
+                                                                >Product Short Name</a
+                                                            >
+                                                        </h2>
+                                                        <div class="price-box">
+                                                            <span class="product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="old-price">$59.00</span>
+                                                            <span
+                                                                class="discount-price"
+                                                                style="font-size: 13px"
+                                                                >50%off</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                            </div>
+                                            <div class="grid-item height-x1 w-1/3">
+                                                <div
+                                                    class="product-default inner-quickview inner-icon bg-white"
+                                                >
+                                                    <figure>
+                                                        <a href="product.html">
+                                                            <img
+                                                                src="./assets/img/products/product-15.jpg"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div class="product-details">
+                                                        <h2 class="product-title">
+                                                            <a href="product.html"
+                                                                >Product Short Name</a
+                                                            >
+                                                        </h2>
+                                                        <div class="price-box">
+                                                            <span class="product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="old-price">$59.00</span>
+                                                            <span
+                                                                class="discount-price"
+                                                                style="font-size: 13px"
+                                                                >50%off</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                            </div>
+                                            <div class="grid-item height-x1 w-1/3">
+                                                <div
+                                                    class="product-default inner-quickview inner-icon bg-white"
+                                                >
+                                                    <figure>
+                                                        <a href="product.html">
+                                                            <img
+                                                                src="./assets/img/products/product-16.jpg"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div class="product-details">
+                                                        <h2 class="product-title">
+                                                            <a href="product.html"
+                                                                >Product Short Name</a
+                                                            >
+                                                        </h2>
+                                                        <div class="price-box">
+                                                            <span class="product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="old-price">$59.00</span>
+                                                            <span
+                                                                class="discount-price"
+                                                                style="font-size: 13px"
+                                                                >50%off</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                            </div>
+                                            <div class="grid-item height-x1 w-1/3">
+                                                <div
+                                                    class="product-default inner-quickview inner-icon bg-white"
+                                                >
+                                                    <figure>
+                                                        <a href="product.html">
+                                                            <img
+                                                                src="./assets/img/products/product-17.jpg"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div class="product-details">
+                                                        <h2 class="product-title">
+                                                            <a href="product.html"
+                                                                >Product Short Name</a
+                                                            >
+                                                        </h2>
+                                                        <div class="price-box">
+                                                            <span class="product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="old-price">$59.00</span>
+                                                            <span
+                                                                class="discount-price"
+                                                                style="font-size: 13px"
+                                                                >50%off</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                            </div>
+                                            <div class="grid-item height-x1 w-1/3">
+                                                <div
+                                                    class="product-default inner-quickview inner-icon bg-white"
+                                                >
+                                                    <figure>
+                                                        <a href="product.html">
+                                                            <img
+                                                                src="./assets/img/products/product-18.jpg"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div class="product-details">
+                                                        <h2 class="product-title">
+                                                            <a href="product.html"
+                                                                >Product Short Name</a
+                                                            >
+                                                        </h2>
+                                                        <div class="price-box">
+                                                            <span class="product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="old-price">$59.00</span>
+                                                            <span
+                                                                class="discount-price"
+                                                                style="font-size: 13px"
+                                                                >50%off</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== END Product Panel two Section  ===== -->
+                        <!-- ===== Start Home Banner Section  ===== -->
+                        <section class="container mx-auto px-2 py-3 flex flex-col items-center">
+                            <div class="">
+                                <div class="">
+                                    <a href="#" class="hover_effect1">
+                                        <img
+                                            src="./assets/img/banners/Screenshot from 2021-03-28 12-47-01.png"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== END Home Banner Section  ===== -->
+                        <!-- ===== Start Product Panel one Section ===== -->
+                        <section class="container mx-auto px-2 flex flex-col items-center">
+                            <div class="section-title w-full mb-2 flex justify-between">
+                                <h2>Recommended Product</h2>
+                                <p>
+                                    <a
+                                        href="javascript:void(0)"
+                                        class="text-xl pl-4 flex product-view-all-btn"
+                                        style="color: #01abec"
+                                        ><span
+                                            class="material-icons-outlined"
+                                            style="font-size: 17px"
+                                        >
+                                            bolt
+                                        </span>
+                                        View All</a
+                                    >
+                                </p>
+                            </div>
+                            <div class="w-full flex items-center">
+                                <!-- End .product-banner -->
+                                <div class="w-full product-panel flex flex-wrap flex-wrap">
+                                    <div
+                                        class="product-default inner-quickview inner-icon w-1/5"
+                                        style="padding: 0"
+                                    >
+                                        <figure class="hover_effect1">
+                                            <img
+                                                src="./assets/img/banners/banner2.png"
+                                                height="312"
+                                                alt="banner"
+                                            />
+                                        </figure>
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-5.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-7.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-6.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-8.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-5.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-7.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-6.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-8.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                    <div class="product-default inner-quickview inner-icon w-1/5">
+                                        <figure>
+                                            <a href="product.html">
+                                                <img src="./assets/img/products/product-18.jpg" />
+                                            </a>
+                                            <div class="label-group">
+                                                <span class="product-label label-cut">27% OFF</span>
+                                            </div>
+                                            <div class="btn-icon-group">
+                                                <button
+                                                    class="btn-icon btn-add-cart"
+                                                    data-toggle="modal"
+                                                    data-target="#addCartModal"
+                                                >
+                                                    <span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        shopping_bag
+                                                    </span>
+                                                </button>
+                                            </div>
+                                            <a
+                                                href="ajax/product-quick-view.html"
+                                                class="btn-quickview"
+                                                title="Quick View"
+                                                >Quick View</a
+                                            >
+                                        </figure>
+                                        <div class="product-details">
+                                            <div class="category-wrap">
+                                                <div class="category-list">
+                                                    <a href="category.html" class="product-category"
+                                                        >category</a
+                                                    >
+                                                </div>
+                                                <a href="#" class="btn-icon-wish"
+                                                    ><span
+                                                        class="material-icons-outlined"
+                                                        style="font-size: 18px"
+                                                    >
+                                                        favorite_border
+                                                    </span></a
+                                                >
+                                            </div>
+                                            <h2 class="product-title">
+                                                <a href="product.html">Product Short Name</a>
+                                            </h2>
+                                            <div class="ratings-container">
+                                                <div class="product-ratings">
+                                                    <span class="ratings" style="width: 0%"></span
+                                                    ><!-- End .ratings -->
+                                                    <span class="tooltiptext tooltip-top"></span>
+                                                </div>
+                                                <!-- End .product-ratings -->
+                                            </div>
+                                            <!-- End .product-container -->
+                                            <div class="price-box">
+                                                <span class="product-price">$49.00</span>
+                                                <span class="old-price">$59.00</span>
+                                                <span class="discount-price" style="font-size: 13px"
+                                                    >50%off</span
+                                                >
+                                            </div>
+                                            <!-- End .price-box -->
+                                        </div>
+                                        <!-- End .product-details -->
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- ===== End Product Panel three Section ===== -->
+                        <!-- ===== Start Top Brand Section ===== -->
+                        <section
+                            class="container mx-auto px-2 flex flex-col items-center mt-3 mb-7"
+                            id="topBrands"
+                        >
+                            <div class="section-title w-full mb-2 flex justify-between">
+                                <h2>Top Brands</h2>
+                                <p>
+                                    <a
+                                        href="javascript:void(0)"
+                                        class="text-xl pl-4 flex product-view-all-btn"
+                                        style="color: #01abec"
+                                        ><span
+                                            class="material-icons-outlined"
+                                            style="font-size: 17px"
+                                        >
+                                            bolt
+                                        </span>
+                                        View All</a
+                                    >
+                                </p>
+                            </div>
+                            <div
+                                class="topbrand-carousel owl-carousel owl-theme text-center flex justify-between w-full"
+                            >
+                                <img src="./assets/img/brands/1.png" alt="Brands One" />
+                                <img src="./assets/img/brands/2.png" alt="Brands Two" />
+                                <img src="./assets/img/brands/3.png" alt="Brands Three" />
+                                <img src="./assets/img/brands/4.png" alt="Brands Four" />
+                                <img src="./assets/img/brands/5.png" alt="Brands Five" />
+                                <img src="./assets/img/brands/1.png" alt="Brands One" />
+                                <img src="./assets/img/brands/2.png" alt="Brands Two" />
+                                <img src="./assets/img/brands/3.png" alt="Brands Three" />
+                                <img src="./assets/img/brands/4.png" alt="Brands Four" />
+                                <img src="./assets/img/brands/5.png" alt="Brands Five" />
+                            </div>
+                        </section>
+                        <!-- ===== End Top Brand  Section ===== -->
+                    </section>
+                </div>
+            </main>
+            <!-- ========= END Main Home Wrapper ======= -->
+
+            <!-- ===== Start Footer Section ===== -->
+            <section class="container mx-auto px-2 flex flex-col items-center">
+                <footer class="footer w-full bg-white">
+                    <div class="container">
+                        <div class="footer__middle pt-24 flex">
+                            <div class="w-5/12">
+                                <a href="#">
+                                    <img src="./assets/img/logo-black.png" alt="Logo" />
+                                </a>
+                                <div class="flex flex-wrap">
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget">
+                                            <h4 class="footer__widget-title">ADDRESS</h4>
+                                            <a href="#"
+                                                >- 5/1 West Nokhalpara Near Prime Minister Office,
+                                                Tejgaon, Dhaka 1215</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget footer__email underline">
+                                            <h4 class="footer__widget-title">EMAIL</h4>
+                                            <a href="mailto:mail@example.com">mail@example.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget">
+                                            <h4 class="footer__widget-title">PHONE</h4>
+                                            <a href="#">Toll Free (123) 456-7890</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget">
+                                            <h4 class="footer__widget-title">WORKING DAYS/HOURS</h4>
+                                            <a href="#">Mon - Sun / 9:00AM - 8:00PM</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__social-icons mb-10 flex">
+                                            <a href="#" class="footer__social-icon" target="_blank"
+                                                ><img
+                                                    style="font-size: 1.4rem"
+                                                    class="footer__icon-img"
+                                                    src="./assets/dist/icons/facebook1.svg"
+                                                    alt=""
+                                            /></a>
+                                            <a href="#" class="footer__social-icon" target="_blank"
+                                                ><img
+                                                    class="footer__icon-img"
+                                                    src="./assets/dist/icons/instagram.svg"
+                                                    alt=""
+                                            /></a>
+
+                                            <a href="#" class="footer__social-icon" target="_blank">
+                                                <img
+                                                    class="footer__icon-img"
+                                                    src="./assets/dist/icons/whatsapp.svg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                        <!-- End .social-icons -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-3/12">
+                                <div class="footer__widget">
+                                    <h4 class="footer__widget-title">Account</h4>
+                                    <ul class="footer__links footer__link-parts">
+                                        <div class="footer__link-part">
+                                            <li><a href="my-account.html">My Account</a></li>
+                                            <li><a href="#">Track Your Order</a></li>
+                                            <li><a href="#">Payment Methods</a></li>
+                                            <li><a href="#">Shipping Guide</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Product Support</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                        </div>
+                                        <div class="footer__link-part">
+                                            <li>
+                                                <a href="my-account.html">Orders History</a>
+                                            </li>
+                                            <li><a href="#">Advanced Search</a></li>
+                                            <li><a href="#">Affiliate Program</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                            <div class="w-2/12">
+                                <div class="footer__widget">
+                                    <h4 class="footer__widget-title">About</h4>
+                                    <ul class="footer__links">
+                                        <li><a href="about.html">About Porto</a></li>
+                                        <li><a href="#">Our Guarantees</a></li>
+                                        <li><a href="#">Terms And Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Return Policy</a></li>
+                                        <li><a href="#">Intellectual Property Claims</a></li>
+                                        <li><a href="#">Site Map</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                            <div class="w-2/12">
+                                <div class="footer__widget">
+                                    <h4 class="footer__widget-title">Features</h4>
+                                    <ul class="footer__links">
+                                        <li><a href="#">Powerful Admin Panel</a></li>
+                                        <li><a href="#">Mobile & Retina Optimized</a></li>
+                                        <li><a href="#">Super Fast Magento Theme</a></li>
+                                        <li><a href="#">1st Fully working Ajax Theme</a></li>
+                                        <li><a href="#">10 Unique Homepage Layouts</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                        </div>
+
+                        <div class="footer__bottom flex justify-between items-center flex-wrap">
+                            <p class="text-gray-500 text-xl mb-0">
+                                Porto eCommerce. &copy; 2020. All Rights Reserved
+                            </p>
+                            <img
+                                src="./assets/img/payments_long.png"
+                                width="180px"
+                                style="max-height: 24px"
+                            />
+                        </div>
+                    </div>
+                </footer>
+                <!-- End .footer -->
+            </section>
+            <!-- ===== End Footer Section ===== -->
+        </div>
+
+        <!-- ===================== SCRIPTS ===================== -->
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- OwlCarousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- Main Custom JS -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,101 @@
+.footer {
+    background-color: #fff;
+    img {
+        width: auto;
+        height: auto;
+    }
+    &__middle {
+        border-top: 1px solid #e7e7e7;
+        img:not(.footer__icon-img) {
+            margin-bottom: 4rem;
+        }
+    }
+    &__links {
+        li {
+            margin-bottom: 0.6rem;
+        }
+    }
+    &__link-parts {
+    }
+    &__link-part {
+    }
+    &__social-icons {
+    }
+    &__social-icon {
+        width: 20px;
+        height: 20px;
+        background-color: transparent;
+        margin-top: 1.5rem;
+        margin-right: 1.5rem;
+        &:hover .footer__icon-img {
+            transform: scale(1.4);
+        }
+    }
+    &__icon-img {
+        height: 1.6rem;
+        width: 1.6rem;
+        transition: all 0.3s;
+        &::before {
+            content: '';
+            margin: 0;
+        }
+    }
+    &__bottom {
+    }
+    &__widget {
+        margin-top: 0;
+        a {
+            color: rgb(104, 101, 101);
+            font-size: 13px;
+            &:hover {
+                color: $primary-color;
+                transform: scale(1.1);
+            }
+        }
+        &-title {
+            text-transform: none;
+            color: black;
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__contact-widget {
+        margin: 1rem 0;
+        a {
+            font-weight: 400;
+            color: #777;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        &.footer__email a {
+            color: #01abec;
+        }
+    }
+    &__bottom {
+        border-top: 1px solid #e1e1e1;
+        padding: 2rem 0 6.5rem;
+    }
+}
+
+.footer__middle .footer__links.footer__link-parts {
+    display: flex;
+}
+.footer__middle .footer__links.footer__link-parts .footer__link-part + .footer__link-part {
+    margin-left: 4rem;
+}
+
+.footer__contact-widget .footer__widget-title {
+    font: 600 1.3rem 'Poppins', 'Open Sans', sans-serif;
+    color: #222529;
+    margin-bottom: 0;
+}
+@media (max-width: 1199px) {
+    .footer__middle .footer__links.footer__link-parts {
+        flex-direction: column;
+    }
+    .footer__middle .footer__links.footer__link-parts .footer__link-part + .footer__link-part {
+        margin-left: 0;
+    }
+}

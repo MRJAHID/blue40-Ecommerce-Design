@@ -1,0 +1,95 @@
+.heroslider-content {
+    &__slide {
+        height: 440px;
+        padding: 6.5rem 8rem;
+        position: relative;
+        background-size: cover;
+        &--content {
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 0.01em;
+            font-weight: 700;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: space-between;
+            height: 100%;
+            &.slider-text-content-left {
+                align-items: flex-start;
+                .skew-box:first-child {
+                    padding: 0.8rem 3rem 0.8rem 1.2rem;
+                }
+                .skew-box:last-child {
+                    font-size: 2.6rem;
+                    padding: 0 1rem;
+                }
+            }
+            h2 {
+                font-size: 3.6rem;
+                line-height: 1.2;
+            }
+            .sale-off {
+                font-size: 1.6rem;
+                color: #222529;
+                text-transform: uppercase;
+                text-align: left;
+                position: relative;
+                ::before {
+                    content: 'UP TO';
+                    font-size: 1rem;
+                    letter-spacing: 0;
+                    color: #222529;
+                    opacity: 0.6;
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    transform: translate(-80%, -50%) rotate(-90deg);
+                }
+                span {
+                    font-size: 2.6rem;
+                    color: #fff;
+                    background-color: #222529;
+                    padding: 0 0.5rem;
+                    margin: 0 0.5rem 0 0;
+                }
+            }
+        }
+    }
+}
+// .heroslider-content {
+//     position: relative;
+// }
+
+// .owl-prev,
+// .owl-next {
+//     position: absolute;
+//     top: 50%;
+//     margin-top: -10px; // Half of the prev/next buttons height here in negatives to center them perfectly
+// }
+
+// .owl-prev {
+//     left: 0;
+// }
+
+// .owl-next {
+//     right: 0;
+// }
+
+// .owl-theme .owl-nav [class*='owl-'] {
+//     color: #ffffff;
+//     background: none;
+// }
+
+// .owl-theme .owl-nav [class*='owl-']:hover {
+//     background: #757575;
+//     color: #ffffff;
+//     text-decoration: none;
+// }
+
+// .owl-theme .owl-dots .owl-dot span {
+//     background: #bdbdbd;
+// }
+
+// .owl-theme .owl-dots .owl-dot.active span,
+// .owl-theme .owl-dots .owl-dot:hover span {
+//     background: #757575;
+// }
