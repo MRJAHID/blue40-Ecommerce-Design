@@ -16,8 +16,12 @@
 @import './components/slider';
 @import './components/button';
 @import './components/smallcart';
+@import './components/breadcrumb';
+@import './components/pagination';
+@import './components/product-shorting';
 // pages
 @import './pages/home';
+@import './pages/productlist';
 // Layouts
 @import './layouts/header';
 @import './layouts/footer';

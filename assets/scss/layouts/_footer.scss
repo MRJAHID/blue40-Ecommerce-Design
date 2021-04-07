@@ -2,12 +2,12 @@
     background-color: #fff;
     img {
         width: auto;
-        height: auto;
+        height: 40px;
     }
     &__middle {
         border-top: 1px solid #e7e7e7;
         img:not(.footer__icon-img) {
-            margin-bottom: 4rem;
+            margin-bottom: 2rem;
         }
     }
     &__links {

@@ -1,0 +1,108 @@
+.toolbox {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    color: #7a7d82;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    width: 100%;
+    &::after {
+        display: block;
+        clear: both;
+        content: '';
+    }
+}
+.toolbox-left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+}
+.toolbox-item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.toolbox-item.toolbox-sort {
+    margin-right: 1.5rem;
+}
+.toolbox-item.toolbox-show {
+    margin-left: auto;
+    font-size: 1.2rem;
+}
+.toolbox-item label {
+    margin-right: 1.2rem;
+}
+.toolbox .select-custom {
+    margin-bottom: 0;
+    &::after {
+        right: 1.3rem;
+        font-size: 1.6rem;
+        top: 50%;
+    }
+}
+.toolbox .select-custom .form-control {
+    max-width: 20rem;
+    width: 20rem;
+    padding-right: 2.5rem;
+    font-size: 1.3rem;
+    background-color: #fff;
+}
+.toolbox label {
+    display: none;
+    margin-top: 1px;
+    margin-bottom: 0;
+    color: #7a7d82;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.toolbox .form-control {
+    color: #7a7d82;
+    display: inline-block;
+    border-width: 0.1rem;
+    padding: 0 0.8rem;
+    margin-bottom: 0;
+}
+.toolbox .form-control:not(:focus) {
+    border-color: #e4e4e4;
+}
+.toolbox select.form-control:not([size]):not([multiple]) {
+    height: 44px;
+    padding-left: 16px;
+}
+.toolbox .toolbox-show .select-custom:after {
+    right: 1rem;
+}
+
+@media (min-width: 480px) {
+    .toolbox-pagination .toolbox-show {
+        display: -ms-flexbox;
+        display: flex;
+        margin-left: 0;
+    }
+}
+@media (min-width: 576px) {
+    .toolbox-left {
+        margin-bottom: 0;
+    }
+    .toolbox-left label {
+        margin-right: 1.8rem;
+    }
+}
+@media (min-width: 768px) {
+    .toolbox label {
+        display: block;
+    }
+}
+.layout-btn.active,
+.layout-btn:hover,
+.layout-btn:focus {
+    color: $primary-color;
+    text-decoration: none;
+}

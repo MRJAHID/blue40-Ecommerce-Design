@@ -1,0 +1,2593 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>ProductList | E-Project</title>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Tailwind Default Css -->
+        <link rel="stylesheet" href="./assets/dist/css/tailwind.css" />
+        <!-- Custom Css File  -->
+        <link rel="stylesheet" href="./assets/css/index.css" />
+        <!-- Google Material Icon -->
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+            rel="stylesheet"
+        />
+        <!-- OwlCarousel -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        />
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <!-- ========= Start SmallCart Section ======= -->
+            <div id="smallcart">
+                <div>
+                    <div
+                        id="smallcart__container"
+                        class="container w-full h-full fixed hidden"
+                        style="background-color: rgba(0, 0, 0, 0.5); z-index: 1000"
+                    >
+                        <div class="smallcart__div">
+                            <div class="absolute right-0 h-full" style="transform: translateX(0%)">
+                                <div class="smallcart__content h-full bg-white">
+                                    <!-- Top -->
+                                    <div class="flex justify-between px-4 py-2">
+                                        <!-- Close Button -->
+                                        <button
+                                            class="mr-4 align-middle smallcart__close text-gray-800 hover:text-red-600"
+                                        >
+                                            <svg
+                                                stroke="currentColor"
+                                                fill="currentColor"
+                                                stroke-width="0"
+                                                viewBox="0 0 24 24"
+                                                size="20"
+                                                height="20"
+                                                width="20"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+                                                ></path>
+                                            </svg>
+                                        </button>
+                                        <h4 class="px-4 py-4 mb-0 font-semibold bg-white md:py-2">
+                                            <span class="text-2xl">My Cart</span>
+                                        </h4>
+                                    </div>
+                                    <!-- Main Product Div -->
+                                    <ul
+                                        class="smallcart_product-container"
+                                        style="max-height: calc(100% - 200px); overflow-y: scroll"
+                                    >
+                                        <li class="border-b border-gray-300 border-solid">
+                                            <div class="flex justify-between">
+                                                <div class="p-2 mr-2">
+                                                    <img
+                                                        src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/8bb447b8f48e-1.png"
+                                                        class="smallcart__product-img object-contain"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="w-full p-2">
+                                                    <h5
+                                                        class="smallcart__product-name font-bold text-gray-700"
+                                                    >
+                                                        Denim Tops for Women
+                                                    </h5>
+                                                    <small
+                                                        class="smallcart__product-sizecolor text-gray-500 uppercase"
+                                                        >SIZE: M, Color: Navy Blue</small
+                                                    >
+                                                    <p
+                                                        class="smallcart__product-price text-xl font-bold text-gray-700"
+                                                    >
+                                                        ৳ 910 x 1
+                                                    </p>
+                                                    <!-- Increment Btn -->
+                                                    <div class="flex items-center">
+                                                        <button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="none"
+                                                                stroke-width="2"
+                                                                viewBox="0 0 24 24"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <line
+                                                                    x1="5"
+                                                                    y1="12"
+                                                                    x2="19"
+                                                                    y2="12"
+                                                                ></line>
+                                                            </svg></button
+                                                        ><span class="p-2" style="font-size: 15px"
+                                                            >1</span
+                                                        ><button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                stroke-width="0"
+                                                                viewBox="0 0 24 24"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                                                                ></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Remove Button -->
+                                                <button
+                                                    class="p-2 sm:p-4 text-gray-600 hover:text-red-600"
+                                                >
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="none"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="p-1"
+                                                        size="20"
+                                                        height="20"
+                                                        width="20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path
+                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                        ></path>
+                                                        <line
+                                                            x1="10"
+                                                            y1="11"
+                                                            x2="10"
+                                                            y2="17"
+                                                        ></line>
+                                                        <line
+                                                            x1="14"
+                                                            y1="11"
+                                                            x2="14"
+                                                            y2="17"
+                                                        ></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+
+                                        <li class="border-b border-gray-300 border-solid">
+                                            <div class="flex justify-between">
+                                                <div class="p-2 mr-2">
+                                                    <img
+                                                        src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/8bb447b8f48e-1.png"
+                                                        class="smallcart__product-img object-contain"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="w-full p-2">
+                                                    <h5
+                                                        class="smallcart__product-name font-bold text-gray-700"
+                                                    >
+                                                        Denim Tops for Women
+                                                    </h5>
+                                                    <small
+                                                        class="smallcart__product-sizecolor text-gray-500 uppercase"
+                                                        >SIZE: M, Color: Navy Blue</small
+                                                    >
+                                                    <p
+                                                        class="smallcart__product-price text-xl font-bold text-gray-700"
+                                                    >
+                                                        ৳ 910 x 1
+                                                    </p>
+                                                    <!-- Increment Btn -->
+                                                    <div class="flex items-center">
+                                                        <button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="none"
+                                                                stroke-width="2"
+                                                                viewBox="0 0 24 24"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <line
+                                                                    x1="5"
+                                                                    y1="12"
+                                                                    x2="19"
+                                                                    y2="12"
+                                                                ></line>
+                                                            </svg></button
+                                                        ><span class="p-2" style="font-size: 15px"
+                                                            >1</span
+                                                        ><button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                stroke-width="0"
+                                                                viewBox="0 0 24 24"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                                                                ></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Remove Button -->
+                                                <button
+                                                    class="p-2 sm:p-4 text-gray-600 hover:text-red-600"
+                                                >
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="none"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="p-1"
+                                                        size="20"
+                                                        height="20"
+                                                        width="20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path
+                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                        ></path>
+                                                        <line
+                                                            x1="10"
+                                                            y1="11"
+                                                            x2="10"
+                                                            y2="17"
+                                                        ></line>
+                                                        <line
+                                                            x1="14"
+                                                            y1="11"
+                                                            x2="14"
+                                                            y2="17"
+                                                        ></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+
+                                        <li class="border-b border-gray-300 border-solid">
+                                            <div class="flex justify-between">
+                                                <div class="p-2 mr-2">
+                                                    <img
+                                                        src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/8bb447b8f48e-1.png"
+                                                        class="smallcart__product-img object-contain"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="w-full p-2">
+                                                    <h5
+                                                        class="smallcart__product-name font-bold text-gray-700"
+                                                    >
+                                                        Denim Tops for Women
+                                                    </h5>
+                                                    <small
+                                                        class="smallcart__product-sizecolor text-gray-500 uppercase"
+                                                        >SIZE: M, Color: Navy Blue</small
+                                                    >
+                                                    <p
+                                                        class="smallcart__product-price text-xl font-bold text-gray-700"
+                                                    >
+                                                        ৳ 910 x 1
+                                                    </p>
+                                                    <!-- Increment Btn -->
+                                                    <div class="flex items-center">
+                                                        <button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="none"
+                                                                stroke-width="2"
+                                                                viewBox="0 0 24 24"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <line
+                                                                    x1="5"
+                                                                    y1="12"
+                                                                    x2="19"
+                                                                    y2="12"
+                                                                ></line>
+                                                            </svg></button
+                                                        ><span class="p-2" style="font-size: 15px"
+                                                            >1</span
+                                                        ><button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                stroke-width="0"
+                                                                viewBox="0 0 24 24"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                                                                ></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Remove Button -->
+                                                <button
+                                                    class="p-2 sm:p-4 text-gray-600 hover:text-red-600"
+                                                >
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="none"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="p-1"
+                                                        size="20"
+                                                        height="20"
+                                                        width="20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path
+                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                        ></path>
+                                                        <line
+                                                            x1="10"
+                                                            y1="11"
+                                                            x2="10"
+                                                            y2="17"
+                                                        ></line>
+                                                        <line
+                                                            x1="14"
+                                                            y1="11"
+                                                            x2="14"
+                                                            y2="17"
+                                                        ></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+
+                                        <li class="border-b border-gray-300 border-solid">
+                                            <div class="flex justify-between">
+                                                <div class="p-2 mr-2">
+                                                    <img
+                                                        src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/8bb447b8f48e-1.png"
+                                                        class="smallcart__product-img object-contain"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="w-full p-2">
+                                                    <h5
+                                                        class="smallcart__product-name font-bold text-gray-700"
+                                                    >
+                                                        Denim Tops for Women
+                                                    </h5>
+                                                    <small
+                                                        class="smallcart__product-sizecolor text-gray-500 uppercase"
+                                                        >SIZE: M, Color: Navy Blue</small
+                                                    >
+                                                    <p
+                                                        class="smallcart__product-price text-xl font-bold text-gray-700"
+                                                    >
+                                                        ৳ 910 x 1
+                                                    </p>
+                                                    <!-- Increment Btn -->
+                                                    <div class="flex items-center">
+                                                        <button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="none"
+                                                                stroke-width="2"
+                                                                viewBox="0 0 24 24"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <line
+                                                                    x1="5"
+                                                                    y1="12"
+                                                                    x2="19"
+                                                                    y2="12"
+                                                                ></line>
+                                                            </svg></button
+                                                        ><span class="p-2" style="font-size: 15px"
+                                                            >1</span
+                                                        ><button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                stroke-width="0"
+                                                                viewBox="0 0 24 24"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                                                                ></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Remove Button -->
+                                                <button
+                                                    class="p-2 sm:p-4 text-gray-600 hover:text-red-600"
+                                                >
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="none"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="p-1"
+                                                        size="20"
+                                                        height="20"
+                                                        width="20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path
+                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                        ></path>
+                                                        <line
+                                                            x1="10"
+                                                            y1="11"
+                                                            x2="10"
+                                                            y2="17"
+                                                        ></line>
+                                                        <line
+                                                            x1="14"
+                                                            y1="11"
+                                                            x2="14"
+                                                            y2="17"
+                                                        ></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+
+                                        <li class="border-b border-gray-300 border-solid">
+                                            <div class="flex justify-between">
+                                                <div class="p-2 mr-2">
+                                                    <img
+                                                        src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/8bb447b8f48e-1.png"
+                                                        class="smallcart__product-img object-contain"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="w-full p-2">
+                                                    <h5
+                                                        class="smallcart__product-name font-bold text-gray-700"
+                                                    >
+                                                        Denim Tops for Women
+                                                    </h5>
+                                                    <small
+                                                        class="smallcart__product-sizecolor text-gray-500 uppercase"
+                                                        >SIZE: M, Color: Navy Blue</small
+                                                    >
+                                                    <p
+                                                        class="smallcart__product-price text-xl font-bold text-gray-700"
+                                                    >
+                                                        ৳ 910 x 1
+                                                    </p>
+                                                    <!-- Increment Btn -->
+                                                    <div class="flex items-center">
+                                                        <button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="none"
+                                                                stroke-width="2"
+                                                                viewBox="0 0 24 24"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <line
+                                                                    x1="5"
+                                                                    y1="12"
+                                                                    x2="19"
+                                                                    y2="12"
+                                                                ></line>
+                                                            </svg></button
+                                                        ><span class="p-2" style="font-size: 15px"
+                                                            >1</span
+                                                        ><button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                stroke-width="0"
+                                                                viewBox="0 0 24 24"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                                                                ></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Remove Button -->
+                                                <button
+                                                    class="p-2 sm:p-4 text-gray-600 hover:text-red-600"
+                                                >
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="none"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="p-1"
+                                                        size="20"
+                                                        height="20"
+                                                        width="20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path
+                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                        ></path>
+                                                        <line
+                                                            x1="10"
+                                                            y1="11"
+                                                            x2="10"
+                                                            y2="17"
+                                                        ></line>
+                                                        <line
+                                                            x1="14"
+                                                            y1="11"
+                                                            x2="14"
+                                                            y2="17"
+                                                        ></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+
+                                        <li class="border-b border-gray-300 border-solid">
+                                            <div class="flex justify-between">
+                                                <div class="p-2 mr-2">
+                                                    <img
+                                                        src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/8bb447b8f48e-1.png"
+                                                        class="smallcart__product-img object-contain"
+                                                        alt=""
+                                                    />
+                                                </div>
+                                                <div class="w-full p-2">
+                                                    <h5
+                                                        class="smallcart__product-name font-bold text-gray-700"
+                                                    >
+                                                        Denim Tops for Women
+                                                    </h5>
+                                                    <small
+                                                        class="smallcart__product-sizecolor text-gray-500 uppercase"
+                                                        >SIZE: M, Color: Navy Blue</small
+                                                    >
+                                                    <p
+                                                        class="smallcart__product-price text-xl font-bold text-gray-700"
+                                                    >
+                                                        ৳ 910 x 1
+                                                    </p>
+                                                    <!-- Increment Btn -->
+                                                    <div class="flex items-center">
+                                                        <button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="none"
+                                                                stroke-width="2"
+                                                                viewBox="0 0 24 24"
+                                                                stroke-linecap="round"
+                                                                stroke-linejoin="round"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <line
+                                                                    x1="5"
+                                                                    y1="12"
+                                                                    x2="19"
+                                                                    y2="12"
+                                                                ></line>
+                                                            </svg></button
+                                                        ><span class="p-2" style="font-size: 15px"
+                                                            >1</span
+                                                        ><button
+                                                            class="p-1 border hover:border-gray-800"
+                                                        >
+                                                            <svg
+                                                                stroke="currentColor"
+                                                                fill="currentColor"
+                                                                stroke-width="0"
+                                                                viewBox="0 0 24 24"
+                                                                height="1.4em"
+                                                                width="1.4em"
+                                                                xmlns="http://www.w3.org/2000/svg"
+                                                            >
+                                                                <path
+                                                                    d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"
+                                                                ></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Remove Button -->
+                                                <button
+                                                    class="p-2 sm:p-4 text-gray-600 hover:text-red-600"
+                                                >
+                                                    <svg
+                                                        stroke="currentColor"
+                                                        fill="none"
+                                                        stroke-width="2"
+                                                        viewBox="0 0 24 24"
+                                                        stroke-linecap="round"
+                                                        stroke-linejoin="round"
+                                                        class="p-1"
+                                                        size="20"
+                                                        height="20"
+                                                        width="20"
+                                                        xmlns="http://www.w3.org/2000/svg"
+                                                    >
+                                                        <polyline points="3 6 5 6 21 6"></polyline>
+                                                        <path
+                                                            d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
+                                                        ></path>
+                                                        <line
+                                                            x1="10"
+                                                            y1="11"
+                                                            x2="10"
+                                                            y2="17"
+                                                        ></line>
+                                                        <line
+                                                            x1="14"
+                                                            y1="11"
+                                                            x2="14"
+                                                            y2="17"
+                                                        ></line>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <!-- Bottom -->
+                                    <div
+                                        class="absolute bottom-0 flex flex-col justify-center w-full p-4"
+                                    >
+                                        <div class="mb-4 font-semibold text-gray-800">
+                                            <div class="flex py-2">
+                                                <div
+                                                    class="flex-1 font-bold text-2xl tracking-wide"
+                                                >
+                                                    <p>Subtotal</p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="whitespace-no-wrap font-bold text-2xl tracking-wide"
+                                                    >
+                                                        ৳ 47810.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="flex py-2 mt-2 text-lg font-bold">
+                                                <div
+                                                    class="flex-1 font-bold text-2xl tracking-wide"
+                                                >
+                                                    <p>Total</p>
+                                                </div>
+                                                <div class="">
+                                                    <p
+                                                        class="whitespace-no-wrap font-bold text-2xl tracking-wide"
+                                                    >
+                                                        ৳ 47810.00
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button
+                                            class="smallcart__checkout-btn rounded overflow-hidden relative whitespace-no-wrap"
+                                        >
+                                            <span class="smallcart__ripple"></span
+                                            ><span class="flex items-center justify-center"
+                                                >Proceed to checkout<svg
+                                                    stroke="currentColor"
+                                                    fill="currentColor"
+                                                    stroke-width="0"
+                                                    viewBox="0 0 24 24"
+                                                    class="mx-1"
+                                                    height="1em"
+                                                    width="1em"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        d="M7 18c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zM1 2v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.14 0-.25-.11-.25-.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.58-6.49c.08-.14.12-.31.12-.48 0-.55-.45-1-1-1H5.21l-.94-2H1zm16 16c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2z"
+                                                    ></path></svg
+                                            ></span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Cart Mini Bag  -->
+                    <div
+                        id="smallcart__minibag"
+                        class="container smallcart-minibag-sidebar fixed top-5/10 opacity-70 right-0 hover:opacity-100"
+                    >
+                        <div
+                            class="smallcart-minibag-container bg-green-550 rounded cursor-pointer flex flex-col justify-between items-center"
+                        >
+                            <span
+                                class="smallcart__minibag-icon flex justify-center cursor-pointer text-lg"
+                                ><span class="material-icons-outlined" style="color: #fff">
+                                    local_mall
+                                </span></span
+                            >
+                            <p id="smallcart__minibag-item" class="text-base font-bold text-white">
+                                1 ITEMS
+                            </p>
+                            <p
+                                class="w-full text-white text-center font-bold text-base"
+                                style="background: rgb(45, 55, 72)"
+                            >
+                                <span>৳&nbsp;</span> <span id="small_cart_amount"> 720 </span>
+                                <input id="smallcart__minibag-amount" type="hidden" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ========= END SmallCart Section ======= -->
+
+            <!-- ========= Start Heading Section ======= -->
+            <header class="header sticky top-0 z-50">
+                <div class="header__content py-6">
+                    <div class="w-full mx-auto px-16 flex items-center justify-between relative">
+                        <!-- Header left side -->
+                        <div class="header__left">
+                            <div class="flex">
+                                <div class="side-nav__hamburger cursor-pointer">
+                                    <span
+                                        class="material-icons-outlined text-white mr-9"
+                                        style="font-size: 31px"
+                                    >
+                                        menu
+                                    </span>
+                                </div>
+                                <div>
+                                    <a href="index-2.html" class="logo block">
+                                        <img
+                                            src="./assets/img/logo1.png"
+                                            style="height: 45px"
+                                            class="block max-w-full h-auto"
+                                            alt="Logo"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End .header-left -->
+
+                        <!-- Header Center -->
+                        <div class="header__center flex flex-col items-start">
+                            <div class="header__search relative m-0 p-0 border-none">
+                                <a href="#" class="header__search--toggle" role="button">
+                                    <span class="material-icons-outlined f-icon"> search </span>
+                                </a>
+                                <form action="#" method="get">
+                                    <div class="header__search--wrapper">
+                                        <input
+                                            type="search"
+                                            class="header__search--input-box"
+                                            name="q"
+                                            id="q"
+                                            placeholder="Search what you want..."
+                                            required
+                                        />
+                                        <!-- End .select-custom -->
+                                        <button class="header__search--btn" type="submit">
+                                            <span
+                                                class="material-icons-outlined text-gray-500 w-8 h-8"
+                                            >
+                                                search
+                                            </span>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!-- End .header-center -->
+
+                        <!-- Header Right side -->
+                        <div class="header__right flex items-center">
+                            <a href="login.html">
+                                <div
+                                    class="header__user flex items-center mr-8 text-white cursor-pointer"
+                                >
+                                    <span class="material-icons-outlined header__user--icon1">
+                                        perm_identity
+                                    </span>
+                                    <div class="header__userinfo text-white">
+                                        <span class="text-lg font-normal">Hello!</span>
+                                        <h4 class="text-xl font-bold mb-0">My Account</h4>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#" class="header__user--icon">
+                                <span class="material-icons-outlined"> favorite_border </span></a
+                            >
+                            <a href="#" class="header__user--icon"
+                                ><span class="material-icons-outlined"> shopping_bag </span></a
+                            >
+                        </div>
+                        <!-- End Header Right side -->
+                    </div>
+                </div>
+            </header>
+            <!-- ========= END Heading Section ======= -->
+
+            <!-- ========= Start SideNav Section ======= -->
+            <section class="side-nav__section">
+                <nav class="side-nav">
+                    <div class="sidebar-navigation">
+                        <strong class="title"
+                            ><span class="material-icons-outlined pr-2" style="font-size: 20px">
+                                layers
+                            </span>
+                            Sidebar Menu</strong
+                        >
+                        <ul>
+                            <li>
+                                <a href="#" class="flex justify-between"
+                                    >Office Products
+                                    <span style="font-size: 16px" class="material-icons-outlined">
+                                        expand_more
+                                    </span></a
+                                >
+                                <ul>
+                                    <li>
+                                        <a href="#" class="flex justify-between"
+                                            >Writing
+                                            <span
+                                                style="font-size: 16px"
+                                                class="material-icons-outlined"
+                                            >
+                                                expand_more
+                                            </span></a
+                                        >
+                                        <ul>
+                                            <li><a href="#">Colors</a></li>
+                                            <li><a href="#">Pens</a></li>
+                                            <li><a href="#">Pencils</a></li>
+                                            <li><a href="#">Notebooks</a></li>
+                                            <li>
+                                                <a href="#" class="flex justify-between"
+                                                    >Activity
+                                                    <span
+                                                        style="font-size: 16px"
+                                                        class="material-icons-outlined"
+                                                    >
+                                                        expand_more
+                                                    </span></a
+                                                >
+                                                <ul>
+                                                    <li><a href="#">Mouse</a></li>
+                                                    <li><a href="#">Laptop</a></li>
+                                                    <li><a href="#">Desktop</a></li>
+                                                    <li><a href="#">Earphone</a></li>
+                                                    <li><a href="#">Notebooks</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Game</a></li>
+                                    <li><a href="#">Software</a></li>
+                                    <li><a href="#">Internet</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Beauty & Health</a></li>
+                            <li><a href="#">Home Appliance</a></li>
+                            <li>
+                                <a href="#">
+                                    Food
+                                    <span style="font-size: 16px" class="material-icons-outlined">
+                                        expand_more
+                                    </span></a
+                                >
+                                <ul>
+                                    <li><a href="#">All Reviews</a></li>
+                                    <li><a href="#">Galleries</a></li>
+                                    <!-- <li class="selected"><a href="#">How To</a></li> -->
+                                    <li><a href="#">Mobile</a></li>
+                                    <li><a href="#">Software</a></li>
+                                    <li><a href="#">Lists</a></li>
+                                    <li><a href="#">Game</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                    <li><a href="#">Social Media</a></li>
+                                    <li><a href="#">Internet</a></li>
+                                    <li><a href="#">Security</a></li>
+                                    <li><a href="#">Comparison</a></li>
+                                    <li><a href="#">Campaign</a></li>
+                                    <li><a href="#">Hardware</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Baby Care</a></li>
+                            <li><a href="#">Clothings</a></li>
+                            <li><a href="#">T-Shirts</a></li>
+                            <li><a href="#">Pet Care</a></li>
+                            <li><a href="#">Home Cleaning</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
+            <!-- ========= END SideNav Section ======= -->
+
+            <!-- ========= Start Main Home Wrapper ======= -->
+            <main class="main-wrapper">
+                <section class="main-content container mx-auto flex flex-col">
+                    <!-- Start Breadcrumb -->
+                    <nav aria-label="breadcrumb" class="breadcrumb-nav">
+                        <div class="container">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index-2.html"
+                                        ><span class="material-icons-outlined"> home </span></a
+                                    >
+                                </li>
+                                <li class="breadcrumb-item active" aria-current="page">
+                                    Product List
+                                </li>
+                            </ol>
+                        </div>
+                    </nav>
+                    <!-- End Breadcrumb -->
+
+                    <!-- Start ProductList Container -->
+                    <section class="productlist-section-container flex flex-row-reverse w-full">
+                        <!-- ===== Start Product Panel one Section ===== -->
+                        <section class="w-4/5 flex flex-col items-center px-4">
+                            <!-- Start Shorting -->
+                            <nav class="toolbox mb-10">
+                                <div class="toolbox-left">
+                                    <div class="toolbox-item toolbox-sort">
+                                        <div class="select-custom">
+                                            <select name="orderby" class="form-control">
+                                                <option value="menu_order" selected="selected">
+                                                    Default sorting
+                                                </option>
+                                                <option value="popularity">
+                                                    Sort by popularity
+                                                </option>
+                                                <option value="rating">
+                                                    Sort by average rating
+                                                </option>
+                                                <option value="date">Sort by newness</option>
+                                                <option value="price">
+                                                    Sort by price: low to high
+                                                </option>
+                                                <option value="price-desc">
+                                                    Sort by price: high to low
+                                                </option>
+                                            </select>
+                                        </div>
+                                        <!-- End .select-custom -->
+
+                                        <a
+                                            href="#"
+                                            class="sorter-btn"
+                                            title="Set Ascending Direction"
+                                            ><span class="sr-only">Set Ascending Direction</span></a
+                                        >
+                                    </div>
+                                    <!-- End .toolbox-item -->
+                                </div>
+                                <!-- End .toolbox-left -->
+
+                                <div class="toolbox-item toolbox-show">
+                                    <label>Showing 1–9 of 60 results</label>
+                                </div>
+                                <!-- End .toolbox-item -->
+
+                                <div class="layout-modes">
+                                    <a
+                                        href="category.html"
+                                        class="layout-btn btn-grid active"
+                                        title="Grid"
+                                    >
+                                        <span class="material-icons-outlined"> apps </span>
+                                    </a>
+                                    <a
+                                        href="category-list.html"
+                                        class="layout-btn btn-list"
+                                        title="List"
+                                    >
+                                        <span class="material-icons-outlined"> reorder </span>
+                                    </a>
+                                </div>
+                                <!-- End .layout-modes -->
+                            </nav>
+                            <!-- End Shorting -->
+                            <!-- Start -- ProductPanel -->
+                            <div class="product-panel w-full flex flex-wrap items-center">
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-2.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-5.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-7.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-6.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-7.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-6.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                                <div class="product-default w-1/4 inner-quickview inner-icon">
+                                    <figure>
+                                        <a href="product.html">
+                                            <img src="./assets/img/products/product-8.jpg" />
+                                        </a>
+                                        <div class="label-group">
+                                            <span class="product-label label-cut">27% OFF</span>
+                                        </div>
+                                        <div class="btn-icon-group">
+                                            <button
+                                                class="btn-icon btn-add-cart"
+                                                data-toggle="modal"
+                                                data-target="#addCartModal"
+                                            >
+                                                <span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    shopping_bag
+                                                </span>
+                                            </button>
+                                        </div>
+                                        <a
+                                            href="ajax/product-quick-view.html"
+                                            class="btn-quickview"
+                                            title="Quick View"
+                                            >Quick View</a
+                                        >
+                                    </figure>
+                                    <div class="product-details">
+                                        <div class="category-wrap">
+                                            <div class="category-list">
+                                                <a href="category.html" class="product-category"
+                                                    >category</a
+                                                >
+                                            </div>
+                                            <a href="#" class="btn-icon-wish"
+                                                ><span
+                                                    class="material-icons-outlined"
+                                                    style="font-size: 18px"
+                                                >
+                                                    favorite_border
+                                                </span></a
+                                            >
+                                        </div>
+                                        <h2 class="product-title">
+                                            <a href="product.html">Product Short Name</a>
+                                        </h2>
+                                        <div class="ratings-container">
+                                            <div class="product-ratings">
+                                                <span class="ratings" style="width: 0%"></span
+                                                ><!-- End .ratings -->
+                                                <span class="tooltiptext tooltip-top"></span>
+                                            </div>
+                                            <!-- End .product-ratings -->
+                                        </div>
+                                        <!-- End .product-container -->
+                                        <div class="price-box">
+                                            <span class="product-price">$49.00</span>
+                                            <span class="old-price">$59.00</span>
+                                            <span class="discount-price" style="font-size: 13px"
+                                                >50%off</span
+                                            >
+                                        </div>
+                                        <!-- End .price-box -->
+                                    </div>
+                                    <!-- End .product-details -->
+                                </div>
+                            </div>
+                            <!-- End -- ProductPanel -->
+
+                            <!-- Start Pagination -->
+                            <nav class="toolbox toolbox-pagination">
+                                <div class="toolbox-item toolbox-show">
+                                    <label>Showing 1–9 of 60 results</label>
+                                </div>
+                                <!-- End .toolbox-item -->
+
+                                <ul class="pagination">
+                                    <li class="pagination__item disabled">
+                                        <a class="pagination__link pagination__link--btn" href="#"
+                                            ><span class="material-icons-outlined">
+                                                chevron_left
+                                            </span></a
+                                        >
+                                    </li>
+                                    <li class="pagination__item active">
+                                        <a class="pagination__link" href="#"
+                                            >1 <span class="sr-only">(current)</span></a
+                                        >
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">2</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">3</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">4</a>
+                                    </li>
+                                    <li class="pagination__item"><span>...</span></li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link" href="#">15</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a class="pagination__link pagination__link--btn" href="#"
+                                            ><span class="material-icons-outlined">
+                                                navigate_next
+                                            </span></a
+                                        >
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- End Pagination -->
+                        </section>
+                        <!-- ===== End Product Panel one Section ===== -->
+                        <!-- ===== Start ProductList Sidebar ===== -->
+                        <aside class="sidebar-shop w-1/5 order-lg-first px-4">
+                            <div class="sidebar-wrapper">
+                                <!-- Categories -->
+                                <div class="widget">
+                                    <h3 class="widget-title">
+                                        <a
+                                            data-toggle="collapse"
+                                            href="#widget-body-2"
+                                            role="button"
+                                            aria-expanded="true"
+                                            aria-controls="widget-body-2"
+                                            >Categories</a
+                                        >
+                                    </h3>
+
+                                    <div class="collapse show" id="widget-body-2">
+                                        <div class="widget-body productlist__sidenav">
+                                            <nav class="side-nav">
+                                                <div class="sidebar-navigation">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="flex justify-between"
+                                                                >Office Products
+                                                                <span
+                                                                    style="font-size: 16px"
+                                                                    class="material-icons-outlined"
+                                                                >
+                                                                    expand_more
+                                                                </span></a
+                                                            >
+                                                            <ul>
+                                                                <li>
+                                                                    <a
+                                                                        href="#"
+                                                                        class="flex justify-between"
+                                                                        >Writing
+                                                                        <span
+                                                                            style="font-size: 16px"
+                                                                            class="material-icons-outlined"
+                                                                        >
+                                                                            expand_more
+                                                                        </span></a
+                                                                    >
+                                                                    <ul>
+                                                                        <li>
+                                                                            <a href="#">Colors</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Pens</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#">Pencils</a>
+                                                                        </li>
+                                                                        <li>
+                                                                            <a href="#"
+                                                                                >Notebooks</a
+                                                                            >
+                                                                        </li>
+                                                                        <li>
+                                                                            <a
+                                                                                href="#"
+                                                                                class="flex justify-between"
+                                                                                >Activity
+                                                                                <span
+                                                                                    style="
+                                                                                        font-size: 16px;
+                                                                                    "
+                                                                                    class="material-icons-outlined"
+                                                                                >
+                                                                                    expand_more
+                                                                                </span></a
+                                                                            >
+                                                                            <ul>
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        >Mouse</a
+                                                                                    >
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        >Laptop</a
+                                                                                    >
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        >Desktop</a
+                                                                                    >
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        >Earphone</a
+                                                                                    >
+                                                                                </li>
+                                                                                <li>
+                                                                                    <a href="#"
+                                                                                        >Notebooks</a
+                                                                                    >
+                                                                                </li>
+                                                                            </ul>
+                                                                        </li>
+                                                                    </ul>
+                                                                </li>
+                                                                <li><a href="#">Technology</a></li>
+                                                                <li><a href="#">Game</a></li>
+                                                                <li><a href="#">Software</a></li>
+                                                                <li><a href="#">Internet</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#">Beauty & Health</a></li>
+                                                        <li><a href="#">Home Appliance</a></li>
+                                                        <li>
+                                                            <a href="#">
+                                                                Food
+                                                                <span
+                                                                    style="font-size: 16px"
+                                                                    class="material-icons-outlined"
+                                                                >
+                                                                    expand_more
+                                                                </span></a
+                                                            >
+                                                            <ul>
+                                                                <li><a href="#">All Reviews</a></li>
+                                                                <li><a href="#">Galleries</a></li>
+                                                                <!-- <li class="selected"><a href="#">How To</a></li> -->
+                                                                <li><a href="#">Mobile</a></li>
+                                                                <li><a href="#">Software</a></li>
+                                                                <li><a href="#">Lists</a></li>
+                                                                <li><a href="#">Game</a></li>
+                                                                <li><a href="#">Technology</a></li>
+                                                                <li>
+                                                                    <a href="#">Social Media</a>
+                                                                </li>
+                                                                <li><a href="#">Internet</a></li>
+                                                                <li><a href="#">Security</a></li>
+                                                                <li><a href="#">Comparison</a></li>
+                                                                <li><a href="#">Campaign</a></li>
+                                                                <li><a href="#">Hardware</a></li>
+                                                            </ul>
+                                                        </li>
+                                                        <li><a href="#">Baby Care</a></li>
+                                                        <li><a href="#">Clothings</a></li>
+                                                        <li><a href="#">T-Shirts</a></li>
+                                                        <li><a href="#">Pet Care</a></li>
+                                                        <li><a href="#">Home Cleaning</a></li>
+                                                    </ul>
+                                                </div>
+                                            </nav>
+                                        </div>
+                                        <!-- End .widget-body -->
+                                    </div>
+                                    <!-- End .collapse -->
+                                </div>
+
+                                <!-- BRANDS -->
+                                <div class="widget">
+                                    <h3 class="widget-title">
+                                        <a
+                                            data-toggle="collapse"
+                                            href="#widget-body-2"
+                                            role="button"
+                                            aria-expanded="true"
+                                            aria-controls="widget-body-2"
+                                            >Brands</a
+                                        >
+                                    </h3>
+
+                                    <div class="collapse show" id="widget-body-2">
+                                        <div class="widget-body">
+                                            <ul class="cat-list">
+                                                <li class="active"><a href="#">Walton</a></li>
+                                                <li><a href="#">Realme</a></li>
+                                                <li><a href="#">Swapno</a></li>
+                                                <li><a href="#">Daraz</a></li>
+                                            </ul>
+                                        </div>
+                                        <!-- End .widget-body -->
+                                    </div>
+                                    <!-- End .collapse -->
+                                </div>
+
+                                <!-- Price Range -->
+                                <div class="widget">
+                                    <h3 class="widget-title">
+                                        <a
+                                            data-toggle="collapse"
+                                            href="#widget-body-3"
+                                            role="button"
+                                            aria-expanded="true"
+                                            aria-controls="widget-body-3"
+                                            >Price</a
+                                        >
+                                    </h3>
+
+                                    <div class="collapse show" id="widget-body-3">
+                                        <div class="widget-body">
+                                            <img src="./assets/img/pricerange.png" alt="" />
+                                        </div>
+                                        <!-- End .widget-body -->
+                                    </div>
+                                    <!-- End .collapse -->
+                                </div>
+
+                                <!-- Sizes -->
+                                <div class="widget">
+                                    <h3 class="widget-title">
+                                        <a
+                                            data-toggle="collapse"
+                                            href="#widget-body-2"
+                                            role="button"
+                                            aria-expanded="true"
+                                            aria-controls="widget-body-4"
+                                            >Sizes</a
+                                        >
+                                    </h3>
+
+                                    <div class="collapse show" id="widget-body-4">
+                                        <div class="widget-body">
+                                            <div
+                                                class="sidebar-size-list flex flex-col justify-center"
+                                            >
+                                                <div class="flex flex-row flex-wrap justify-center">
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>26</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>28</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>28</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>30</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>32</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>34</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>36</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>38</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>40</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>S</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>M</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>L</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>42</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>44</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>24</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>XS</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>XL</p></label
+                                                        >
+                                                    </div>
+                                                    <div class="mb-2">
+                                                        <label class="filter_size-container"
+                                                            ><input
+                                                                type="checkbox"
+                                                                class="filter_size-checkbox"
+                                                            />
+                                                            <span
+                                                                class="filter_size-checkmark"
+                                                            ></span>
+                                                            <p>20</p></label
+                                                        >
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- End .widget-body -->
+                                    </div>
+                                    <!-- End .collapse -->
+                                </div>
+
+                                <!-- Colors -->
+                                <div class="widget">
+                                    <h3 class="widget-title">
+                                        <a
+                                            data-toggle="collapse"
+                                            href="#widget-body-6"
+                                            role="button"
+                                            aria-expanded="true"
+                                            aria-controls="widget-body-6"
+                                            >Color</a
+                                        >
+                                    </h3>
+
+                                    <div class="collapse show" id="widget-body-6">
+                                        <div class="widget-body">
+                                            <ul class="config-swatch-list">
+                                                <li class="active">
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #6085a5"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #ab6e6e"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #b19970"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #11426b"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #f0f0f0"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #83c2bd"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #979c1c"
+                                                    ></a>
+                                                </li>
+                                                <li>
+                                                    <a
+                                                        href="#"
+                                                        style="background-color: #d2ae8f"
+                                                    ></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <!-- End .widget-body -->
+                                    </div>
+                                    <!-- End .collapse -->
+                                </div>
+
+                                <!-- Featured Product -->
+                                <div class="widget">
+                                    <h3 class="widget-title mb-1">Featured Products</h3>
+                                    <div class="widget-body" style="padding-left: 0px">
+                                        <div
+                                            class="product-default productlist__featured-items left-details product-widget"
+                                        >
+                                            <figure>
+                                                <a href="product.html">
+                                                    <img
+                                                        src="./assets/img/products/product-2.jpg"
+                                                        class="productlist__featured-img"
+                                                    />
+                                                </a>
+                                            </figure>
+                                            <div class="product-details">
+                                                <h2 class="product-title">
+                                                    <a href="product.html">Product Short Name</a>
+                                                </h2>
+                                                <div class="ratings-container">
+                                                    <div class="product-ratings">
+                                                        <span
+                                                            class="ratings"
+                                                            style="width: 100%"
+                                                        ></span
+                                                        ><!-- End .ratings -->
+                                                        <span
+                                                            class="tooltiptext tooltip-top"
+                                                        ></span>
+                                                    </div>
+                                                    <!-- End .product-ratings -->
+                                                </div>
+                                                <!-- End .product-container -->
+                                                <div class="price-box">
+                                                    <span class="old-price">$59.00</span>
+                                                    <span class="product-price">$49.00</span>
+                                                </div>
+                                                <!-- End .price-box -->
+                                            </div>
+                                            <!-- End .product-details -->
+                                        </div>
+                                        <div
+                                            class="product-default productlist__featured-items left-details product-widget"
+                                        >
+                                            <figure>
+                                                <a href="product.html">
+                                                    <img
+                                                        src="./assets/img/products/product-3.jpg"
+                                                        class="productlist__featured-img"
+                                                    />
+                                                </a>
+                                            </figure>
+                                            <div class="product-details">
+                                                <h2 class="product-title">
+                                                    <a href="product.html">Product Short Name</a>
+                                                </h2>
+                                                <div class="ratings-container">
+                                                    <div class="product-ratings">
+                                                        <span
+                                                            class="ratings"
+                                                            style="width: 100%"
+                                                        ></span
+                                                        ><!-- End .ratings -->
+                                                        <span
+                                                            class="tooltiptext tooltip-top"
+                                                        ></span>
+                                                    </div>
+                                                    <!-- End .product-ratings -->
+                                                </div>
+                                                <!-- End .product-container -->
+                                                <div class="price-box">
+                                                    <span class="old-price">$59.00</span>
+                                                    <span class="product-price">$49.00</span>
+                                                </div>
+                                                <!-- End .price-box -->
+                                            </div>
+                                            <!-- End .product-details -->
+                                        </div>
+                                        <div
+                                            class="product-default productlist__featured-items left-details product-widget"
+                                        >
+                                            <figure>
+                                                <a href="product.html">
+                                                    <img
+                                                        src="./assets/img/products/product-4.jpg"
+                                                        class="productlist__featured-img"
+                                                    />
+                                                </a>
+                                            </figure>
+                                            <div class="product-details">
+                                                <h2 class="product-title">
+                                                    <a href="product.html">Product Short Name</a>
+                                                </h2>
+                                                <div class="ratings-container">
+                                                    <div class="product-ratings">
+                                                        <span
+                                                            class="ratings"
+                                                            style="width: 100%"
+                                                        ></span
+                                                        ><!-- End .ratings -->
+                                                        <span
+                                                            class="tooltiptext tooltip-top"
+                                                        ></span>
+                                                    </div>
+                                                    <!-- End .product-ratings -->
+                                                </div>
+                                                <!-- End .product-container -->
+                                                <div class="price-box">
+                                                    <span class="old-price">$59.00</span>
+                                                    <span class="product-price">$49.00</span>
+                                                </div>
+                                                <!-- End .price-box -->
+                                            </div>
+                                            <!-- End .product-details -->
+                                        </div>
+                                    </div>
+                                    <!-- End .widget-body -->
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                            <!-- End .sidebar-wrapper -->
+                        </aside>
+                        <!-- ===== End ProductList Sidebar ===== -->
+                    </section>
+                    <!-- End ProductList Container -->
+                </section>
+            </main>
+            <!-- ========= END Main Home Wrapper ======= -->
+
+            <!-- ===== Start Footer Section ===== -->
+            <section class="footer-section container mx-auto px-2 flex flex-col items-center">
+                <footer class="footer w-full bg-white">
+                    <div class="container">
+                        <div class="footer__middle pt-24 flex">
+                            <div class="w-5/12">
+                                <a href="#">
+                                    <img src="./assets/img/logo2.png" alt="Logo" />
+                                </a>
+                                <div class="flex flex-wrap">
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget">
+                                            <h4 class="footer__widget-title">ADDRESS</h4>
+                                            <a href="#"
+                                                >- 5/1 West Nokhalpara Near Prime Minister Office,
+                                                Tejgaon, Dhaka 1215</a
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget footer__email underline">
+                                            <h4 class="footer__widget-title">EMAIL</h4>
+                                            <a href="mailto:mail@example.com">mail@example.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget">
+                                            <h4 class="footer__widget-title">PHONE</h4>
+                                            <a href="#">Toll Free (123) 456-7890</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__contact-widget">
+                                            <h4 class="footer__widget-title">WORKING DAYS/HOURS</h4>
+                                            <a href="#">Mon - Sun / 9:00AM - 8:00PM</a>
+                                        </div>
+                                    </div>
+                                    <div class="w-1/2">
+                                        <div class="footer__social-icons mb-10 flex">
+                                            <a href="#" class="footer__social-icon" target="_blank"
+                                                ><img
+                                                    style="font-size: 1.4rem"
+                                                    class="footer__icon-img"
+                                                    src="./assets/dist/icons/facebook1.svg"
+                                                    alt=""
+                                            /></a>
+                                            <a href="#" class="footer__social-icon" target="_blank"
+                                                ><img
+                                                    class="footer__icon-img"
+                                                    src="./assets/dist/icons/instagram.svg"
+                                                    alt=""
+                                            /></a>
+
+                                            <a href="#" class="footer__social-icon" target="_blank">
+                                                <img
+                                                    class="footer__icon-img"
+                                                    src="./assets/dist/icons/whatsapp.svg"
+                                                    alt=""
+                                                />
+                                            </a>
+                                        </div>
+                                        <!-- End .social-icons -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-3/12">
+                                <div class="footer__widget">
+                                    <h4 class="footer__widget-title">Account</h4>
+                                    <ul class="footer__links footer__link-parts">
+                                        <div class="footer__link-part">
+                                            <li><a href="my-account.html">My Account</a></li>
+                                            <li><a href="#">Track Your Order</a></li>
+                                            <li><a href="#">Payment Methods</a></li>
+                                            <li><a href="#">Shipping Guide</a></li>
+                                            <li><a href="#">FAQs</a></li>
+                                            <li><a href="#">Product Support</a></li>
+                                            <li><a href="#">Privacy</a></li>
+                                        </div>
+                                        <div class="footer__link-part">
+                                            <li>
+                                                <a href="my-account.html">Orders History</a>
+                                            </li>
+                                            <li><a href="#">Advanced Search</a></li>
+                                            <li><a href="#">Affiliate Program</a></li>
+                                        </div>
+                                    </ul>
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                            <div class="w-2/12">
+                                <div class="footer__widget">
+                                    <h4 class="footer__widget-title">About</h4>
+                                    <ul class="footer__links">
+                                        <li><a href="about.html">About Blue 40</a></li>
+                                        <li><a href="#">Our Guarantees</a></li>
+                                        <li><a href="#">Terms And Conditions</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Return Policy</a></li>
+                                        <li><a href="#">Intellectual Property Claims</a></li>
+                                        <li><a href="#">Site Map</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                            <div class="w-2/12">
+                                <div class="footer__widget">
+                                    <h4 class="footer__widget-title">Features</h4>
+                                    <ul class="footer__links">
+                                        <li><a href="#">Powerful Admin Panel</a></li>
+                                        <li><a href="#">Mobile & Retina Optimized</a></li>
+                                        <li><a href="#">Super Fast Magento Theme</a></li>
+                                        <li><a href="#">1st Fully working Ajax Theme</a></li>
+                                        <li><a href="#">10 Unique Homepage Layouts</a></li>
+                                    </ul>
+                                </div>
+                                <!-- End .widget -->
+                            </div>
+                        </div>
+
+                        <div class="footer__bottom flex justify-between items-center flex-wrap">
+                            <p class="text-gray-500 text-xl mb-0">
+                                &copy; 2021. All Rights Reserved By Blue 40.
+                            </p>
+                            <img
+                                src="./assets/img/payments_long.png"
+                                width="180px"
+                                style="max-height: 24px"
+                            />
+                        </div>
+                    </div>
+                </footer>
+                <!-- End .footer -->
+            </section>
+            <!-- ===== End Footer Section ===== -->
+        </div>
+
+        <!-- ===================== SCRIPTS ===================== -->
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <!-- OwlCarousel -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <!-- Main Custom JS -->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>

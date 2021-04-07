@@ -1,0 +1,108 @@
+.toolbox.toolbox-pagination {
+    margin-bottom: 5rem;
+    padding-top: 2rem;
+    border-top: 0.2rem solid #dfdfdf;
+}
+.toolbox-pagination .toolbox-show {
+    display: none;
+}
+
+.toolbox .pagination {
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-left: auto;
+    border-radius: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    display: flex;
+}
+
+.pagination__item.active .pagination__link {
+    z-index: 1;
+    color: #fff;
+    border-color: #e9e9e9;
+    background-color: $primary-color;
+}
+
+.pagination__link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.pagination__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.4rem;
+    padding: 0 0.3rem;
+    line-height: 1.1;
+    color: #706f6c;
+    background-color: #0000;
+    border: 0.1rem solid #e9e9e9;
+    &:hover {
+        z-index: 2;
+        color: $primary-color;
+        text-decoration: none;
+        background-color: #e9ecef;
+        border-color: #dee2e6;
+    }
+}
+.pagination__item {
+    span {
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+    }
+}
+
+.sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+.pagination__item.disabled .pagination__link.pagination__link--btn {
+    color: #eaeaea;
+    border-color: #eaeaea;
+    background-color: #0000;
+}
+.pagination__item.disabled .pagination__link {
+    color: #eaeaea;
+}
+.pagination__item:first-child .pagination__link {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.pagination__item.disabled .pagination__link {
+    color: #6c757d;
+    pointer-events: none;
+    cursor: auto;
+    background-color: #fff;
+    border-color: #dee2e6;
+}
+.pagination__item:first-child .pagination__link {
+    margin-left: 0;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+.pagination__link:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+.pagination__link:hover,
+.pagination__link:focus {
+    box-shadow: none;
+    color: $primary-color;
+    text-decoration: none;
+    background-color: #0000;
+}
+
+@media (min-width: 992px) {
+    .toolbox.toolbox-pagination {
+        margin-top: 1.5rem;
+        margin-bottom: 5rem;
+    }
+}

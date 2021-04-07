@@ -1,0 +1,41 @@
+.breadcrumb-nav {
+    padding: 1rem 0;
+}
+.breadcrumb {
+    margin-bottom: 0;
+    padding: 1.25rem 0;
+    border-radius: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: flex-start;
+}
+.breadcrumb-item {
+    text-transform: uppercase;
+    font: 500 1.2rem 'Poppins', 'Open Sans', sans-serif;
+    letter-spacing: 0.025em;
+}
+.breadcrumb-item span {
+    font-size: 1.7rem;
+}
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: 1rem;
+}
+.breadcrumb-item + .breadcrumb-item:before {
+    font-family: 'Material Icons Outlined';
+    content: '\e5cc';
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    vertical-align: middle;
+    margin-top: -0.5rem;
+    color: #8e8e8e;
+}
+.breadcrumb-item a,
+.breadcrumb-item.active {
+    color: #8e8e8e;
+}
+.page-header {
+    padding: 3.8rem 0 5rem;
+}
+.breadcrumb-nav + .page-header {
+    margin-top: -3rem;
+}
