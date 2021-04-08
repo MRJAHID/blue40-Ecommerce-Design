@@ -20,7 +20,7 @@
         color: #14a753 !important;
     }
 }
-section,
+section:not(.side-nav__section),
 .product-panel,
 .product-category-panel {
     margin-bottom: 2rem;

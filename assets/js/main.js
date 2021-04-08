@@ -51,6 +51,7 @@ $('.top-shop').owlCarousel({
     },
 });
 // Hero Slider Carousel end
+
 // Top Brand Carousel Start
 $('.topbrand-carousel').owlCarousel({
     items: 5,
@@ -61,6 +62,17 @@ $('.topbrand-carousel').owlCarousel({
     dots: false,
 });
 // Top Brand Carousel end
+
+// Store ProductList Banner Carousel Start
+$('.store-productlist-banner').owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    slideSpeed: 750,
+    dots: false,
+});
+// Store ProductList Banner Carousel end
+
 // START Open Hide Sidebar JS
 var nav = document.getElementsByTagName('nav')[0];
 var burger = document.getElementsByClassName('side-nav__hamburger')[0];
@@ -162,18 +174,3 @@ $(document).ready(function () {
         $('#smallcart__container').hide();
     });
 });
-
-// var smallbag = document.getElementById('small_cart_section_div')[0];
-// var smalldiv = document.getElementById('small_cart_container')[0];
-
-// smalldiv.addEventListener('click', clicked);
-// var j = 0;
-// function clicked() {
-//     if (j === 0) {
-//         smallbag.style = 'right:0';
-//         j++;
-//     } else {
-//         smallbag.style = 'right:270px';
-//         j--;
-//     }
-// }

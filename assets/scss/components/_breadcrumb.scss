@@ -10,9 +10,9 @@
     align-items: flex-start;
 }
 .breadcrumb-item {
-    text-transform: uppercase;
-    font: 500 1.2rem 'Poppins', 'Open Sans', sans-serif;
-    letter-spacing: 0.025em;
+    text-transform: CAPITALIZE;
+    font: 600 1.3rem 'Poppins', 'Open Sans', sans-serif;
+    letter-spacing: 0.015em;
 }
 .breadcrumb-item span {
     font-size: 1.7rem;
@@ -23,7 +23,7 @@
 .breadcrumb-item + .breadcrumb-item:before {
     font-family: 'Material Icons Outlined';
     content: '\e5cc';
-    padding-right: 1rem;
+    padding-right: 0.3rem;
     font-size: 1.4rem;
     vertical-align: middle;
     margin-top: -0.5rem;
@@ -32,7 +32,12 @@
 .breadcrumb-item a,
 .breadcrumb-item.active {
     color: #8e8e8e;
+    &:hover {
+        color: $primary-color;
+        text-decoration: wavy;
+    }
 }
+
 .page-header {
     padding: 3.8rem 0 5rem;
 }
