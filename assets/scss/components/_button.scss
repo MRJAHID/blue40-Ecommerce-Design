@@ -15,3 +15,15 @@
         border-radius: 23px;
     }
 }
+
+// Button Two
+.btn-two {
+    max-width: 28.5625rem;
+    transition: all 0.2s;
+
+    &:hover {
+        color: #fff;
+        background: linear-gradient(130deg, #8bc6ec 0%, $primary-color 100%);
+        border: 1px solid white;
+    }
+}

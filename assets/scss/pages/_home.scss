@@ -65,14 +65,25 @@
     text-overflow: ellipsis;
 }
 .top-shop__img {
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 160px;
+    -o-object-fit: cover;
+    object-fit: cover;
     margin: auto;
     transition: all 0.3s;
     &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 }
+.top-shop__container {
+    margin-right: 4px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
+        var(--tw-shadow);
+}
+
 // ===================
 // Top Shops End
 // ===================
@@ -87,3 +98,46 @@
     margin-left: auto;
     margin-right: auto;
 }
+
+// Search Box
+.search-box {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin-left: auto;
+    // height: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    justify-content: flex-end;
+}
+.search-box__input {
+    background-color: #fff;
+    letter-spacing: 0.025em;
+    font-weight: 500;
+    font-size: 15px;
+    display: flex;
+    padding: 0px 17px;
+    outline: none;
+    border: 1px solid #e7ecef;
+    height: 44px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.search-box__figure {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-right: 29px;
+    padding-left: 29px;
+    color: #fff;
+    background: linear-gradient(90deg, #8bc6ec 0%, $primary-color 100%);
+    transition: all 0.3s;
+    &:hover {
+        background: linear-gradient(180deg, #8bc6ec 0%, $primary-color 100%);
+    }
+}
+.search-box__icon {
+    font-size: 25px;
+}
+// End Search Box

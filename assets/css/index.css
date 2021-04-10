@@ -236,6 +236,18 @@ a {
   border-radius: 23px;
 }
 
+.btn-two {
+  max-width: 28.5625rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-two:hover {
+  color: #fff;
+  background: linear-gradient(130deg, #8bc6ec 0%, #01abec 100%);
+  border: 1px solid white;
+}
+
 .smallcart-minibag-sidebar {
   z-index: 100 !important;
   width: 85px;
@@ -732,16 +744,27 @@ a {
 }
 
 .top-shop__img {
-  height: 150px;
-  width: 150px;
+  height: 130px;
+  width: 160px;
+  -o-object-fit: cover;
+  object-fit: cover;
   margin: auto;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 
 .top-shop__img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.top-shop__container {
+  margin-right: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  -webkit-box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+          box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .grid-item {
@@ -755,6 +778,65 @@ a {
 .grid-item img {
   margin-left: auto;
   margin-right: auto;
+}
+
+.search-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin-left: auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.search-box__input {
+  background-color: #fff;
+  letter-spacing: 0.025em;
+  font-weight: 500;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 17px;
+  outline: none;
+  border: 1px solid #e7ecef;
+  height: 44px;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.search-box__figure {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 29px;
+  padding-left: 29px;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#8bc6ec), to(#01abec));
+  background: linear-gradient(90deg, #8bc6ec 0%, #01abec 100%);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.search-box__figure:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8bc6ec), to(#01abec));
+  background: linear-gradient(180deg, #8bc6ec 0%, #01abec 100%);
+}
+
+.search-box__icon {
+  font-size: 25px;
 }
 
 .sidebar-shop {
@@ -1147,6 +1229,85 @@ a {
 
 .store-details__review {
   font-size: 12px;
+}
+
+.productview__container {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4rem;
+  color: #999;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.productview__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 3rem;
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+figure {
+  margin: 0;
+}
+
+.productview__singlefullimg {
+  position: relative;
+}
+
+@media (min-width: 992px) {
+  .productview__sideimg-wrap {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    max-width: 109px;
+    margin: 0 1rem 0 0;
+  }
+}
+
+.productview__sideimg-wrap {
+  position: relative;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .productview__sideimages {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+.productview__sideimages {
+  -webkit-transition: top 0.3s ease-out;
+  transition: top 0.3s ease-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 992px) {
+  .productview__sideimg {
+    margin: 0 0 1rem;
+  }
+}
+
+.productview__sideimg {
+  position: relative;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+
+.productview__sideimg.active::before {
+  border-color: #01abec;
 }
 
 .header__content {
