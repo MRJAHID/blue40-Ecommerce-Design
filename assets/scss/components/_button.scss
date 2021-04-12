@@ -27,3 +27,28 @@
         border: 1px solid white;
     }
 }
+
+// Button Three
+.btn-three {
+    border: 0;
+    max-width: 20.7rem;
+    padding: 2rem;
+    margin-left: 50px;
+    height: 4.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #fff;
+    background-color: $primary-color;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    &:hover {
+        background: linear-gradient(90deg, #79b6df 0%, $primary-color 100%);
+    }
+}

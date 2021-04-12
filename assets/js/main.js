@@ -174,3 +174,15 @@ $(document).ready(function () {
         $('#smallcart__container').hide();
     });
 });
+
+// Product View information box
+$('.productinformation__tab-link').click(function () {
+    var tabID = $(this).attr('data-tab');
+
+    $(this).addClass('active').siblings().removeClass('active');
+
+    $('#tab-' + tabID)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
+});
