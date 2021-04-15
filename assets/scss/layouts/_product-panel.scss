@@ -355,43 +355,7 @@ section .section-title h2,
         opacity: 1;
     }
 }
-.ratings-container {
-    line-height: 1;
-    margin: 0 0 10px 1px;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    .product-ratings,
-    .ratings {
-        position: relative;
-        display: inline-block;
-        font-size: 13px;
-        letter-spacing: 0.1em;
-        font-family: 'porto';
-    }
-    .product-ratings {
-        height: 13px;
-        &:before {
-            content: '\e852 ''\e852 ''\e852 ''\e852 ''\e852';
-            color: rgba(0, 0, 0, 0.16);
-        }
-        &:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-    }
-    .ratings {
-        position: absolute;
-        top: 0;
-        left: 0;
-        white-space: nowrap;
-        &::before {
-            content: '\2605''\2605''\2605''\2605''\2605';
-            color: #6a6a6d;
-        }
-    }
-}
+
 
 .product-category {
     color: #1d2127;

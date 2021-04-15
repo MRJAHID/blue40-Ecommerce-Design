@@ -18,11 +18,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 ::-moz-selection {
-    background-color: #01abec;
+    background-color: $primary-color;
     color: #fff;
 }
 ::selection {
-    background-color: #01abec;
+    background-color: $primary-color;
     color: #fff;
 }
 .btn.focus,
