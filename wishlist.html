@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop List | E-Project</title>
+    <title>WishList | E-Project</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
     <link rel="icon" type="image/icon" href="./assets/img/favicon.ico" />
@@ -585,9 +585,8 @@
         <!-- ========= END SideNav Section ======= -->
 
         <!-- ========= Start Main Home Wrapper ======= -->
-
-        <main class="main-wrapper" style="background-color: #f7f8fa; margin-bottom: 0px">
-            <section class="main-content container mx-auto flex flex-col" style="margin-bottom: 0px">
+        <main class="main-wrapper">
+            <section class="main-content container mx-auto flex flex-col" style="margin-bottom: 0px;">
                 <!-- Start Breadcrumb -->
                 <nav aria-label="breadcrumb" class="breadcrumb-nav">
                     <div class="container">
@@ -596,7 +595,7 @@
                                 <a href="index-2.html"><span class="material-icons-outlined"> home </span></a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                <a href="#">Shop List</a>
+                                <a href="#">WishList</a>
                             </li>
                         </ol>
                     </div>
@@ -604,341 +603,207 @@
                 <!-- End Breadcrumb -->
 
                 <!-- Start ProductList Container -->
-                <section class="productlist-section-container flex flex-row-reverse w-full" style="margin-bottom: 0px">
-                    <!-- ===== Start Product Panel one Section ===== -->
-                    <section class="w-full flex flex-col items-center px-4">
-                        <!-- Start Shorting -->
-                        <nav class="toolbox mb-10">
-                            <div class="toolbox-left">
-                                <span class="p-3 text-gray-700 text-4xl font-semibold mr-10">Shops - Cash On
-                                    Delivery</span>
+                <section class="wishlist-section-container flex flex-row-reverse w-full" style="margin-bottom: 0px;">
+                    <!-- ===== Start Wishlist Product  Items Section ===== -->
+                    <div class="container">
+                        <table class="wishlist w-full border-collapse">
+                            <thead class="wishlist__head bg-gray-100">
+                                <tr class="wishlist__row">
+                                    <th class="wishlist__column wishlist__column--image">Image</th>
+                                    <th class="wishlist__column wishlist__column--product">Product</th>
+                                    <th class="wishlist__column wishlist__column--stock">Stock Status</th>
+                                    <th class="wishlist__column wishlist__column--price">Price</th>
+                                    <th class="wishlist__column wishlist__column--tocart">Action</th>
+                                    <th class="wishlist__column wishlist__column--remove"></th>
+                                </tr>
+                            </thead>
+                            <tbody class="wishlist__body">
+                                <tr class="wishlist__row">
+                                    <td class="wishlist__column wishlist__column--image">
+                                        <div class="wishlist__product-image"><a href=""
+                                                class="wishlist__product-image__body"><img
+                                                    class="wishlist__product-image__img"
+                                                    src="./assets/img/products/product-2.jpg" alt=""></a></div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--product">
+                                        <div>
+                                            <a href="" class="wishlist__product-name">Electric
+                                                Planer Brandix
+                                                KL370090G 300
+                                                Watts</a>
+                                            <span class="wishlist__due-product">Only 4 items left.</span>
+                                        </div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--stock">
+                                        <div class="badge badge-success">In Stock</div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--price"><span>$699.00</span></td>
+                                    <td class="wishlist__column wishlist__column--tocart"><a href="#"
+                                            class="btn btn-fill-out"><span class="material-icons-outlined pr-1">
+                                                shopping_cart
+                                            </span> Add to Cart</a></td>
+                                    <td class="wishlist__column wishlist__column--remove">
+                                        <button type="button" class="btn wishlist__btn-svg-icon">
+                                            <svg width="12px" height="12px">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                                                    id="cross-12">
+                                                    <path
+                                                        d="M10.8 10.8c-.4.4-1 .4-1.4 0L6 7.4l-3.4 3.4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4L4.6 6 1.2 2.6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L6 4.6l3.4-3.4c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L7.4 6l3.4 3.4c.4.4.4 1 0 1.4z">
+                                                    </path>
+                                                </svg>
+                                            </svg>
+                                        </button></td>
+                                </tr>
 
-                                <div class="toolbox-item toolbox-sort">
-                                    <div class="select-custom">
-                                        <select name="orderby" class="form-control">
-                                            <option value="menu_order" selected="selected">
-                                                Default sorting
-                                            </option>
-                                            <option value="popularity">
-                                                Sort by popularity
-                                            </option>
-                                            <option value="rating">
-                                                Sort by average rating
-                                            </option>
-                                            <option value="date">Sort by newness</option>
-                                            <option value="price">
-                                                Sort by price: low to high
-                                            </option>
-                                            <option value="price-desc">
-                                                Sort by price: high to low
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <!-- End .select-custom -->
+                                <tr class="wishlist__row">
+                                    <td class="wishlist__column wishlist__column--image">
+                                        <div class="wishlist__product-image"><a href=""
+                                                class="wishlist__product-image__body"><img
+                                                    class="wishlist__product-image__img"
+                                                    src="./assets/img/products/product-16.jpg" alt=""></a></div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--product">
+                                        <div>
+                                            <a href="" class="wishlist__product-name">Electric
+                                                Planer Brandix
+                                                KL370090G 300
+                                                Watts</a>
+                                            <span class="wishlist__due-product">Only 4 items left.</span>
+                                        </div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--stock">
+                                        <div class="badge badge-success">In Stock</div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--price"><span>$699.00</span></td>
+                                    <td class="wishlist__column wishlist__column--tocart"><a href="#"
+                                            class="btn btn-fill-out"><span class="material-icons-outlined pr-1">
+                                                shopping_cart
+                                            </span> Add to Cart</a></td>
+                                    <td class="wishlist__column wishlist__column--remove">
+                                        <button type="button" class="btn wishlist__btn-svg-icon">
+                                            <svg width="12px" height="12px">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                                                    id="cross-12">
+                                                    <path
+                                                        d="M10.8 10.8c-.4.4-1 .4-1.4 0L6 7.4l-3.4 3.4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4L4.6 6 1.2 2.6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L6 4.6l3.4-3.4c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L7.4 6l3.4 3.4c.4.4.4 1 0 1.4z">
+                                                    </path>
+                                                </svg>
+                                            </svg>
+                                        </button></td>
+                                </tr>
 
-                                    <a href="#" class="sorter-btn" title="Set Ascending Direction"><span
-                                            class="sr-only">Set Ascending Direction</span></a>
-                                </div>
-                                <!-- End .toolbox-item -->
-                            </div>
-                            <!-- End .toolbox-left -->
-                            <!-- Search Box -->
-                            <div class="search-box">
-                                <input type="text" placeholder="Search..." value="" class="search-box__input" />
-                                <figure class="search-box__figure">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                        _css2="
-                                    @media (max-width: ,768px,) {
-                                      ,
-                                            font-size:20px;
-                                          ,
-                                    }
-                                  " class="search-box__icon" height="1em" width="1em"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                        </path>
-                                    </svg>
-                                </figure>
-                            </div>
-                            <!-- End .layout-modes -->
-                        </nav>
-                        <!-- End Shorting -->
-
-                        <!-- Start -- All Shops Panel -->
-                        <div
-                            class="all-shop text-center w-full grid grid-cols-2 gap-4 my-4 md:grid-cols-5 lg:grid-cols-6">
-                            <div class="top-shop__container shadow p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Rupok Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Evaly Express
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Sports One
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            E-Zadu
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Party Wary
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Rupok Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Evaly Express
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Sports One
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            E-Zadu
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Party Wary
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- End --  All Shops Panel -->
-
-                        <!-- ViewMore Btn Two -->
-                        <div class="flex w-full items-center justify-center p-8 pb-4">
-                            <button class="btn-two w-1/4 p-5 border border-gray-700">
-                                <span class="whitespace-no-wrap font-semibold text-2xl">View more</span>
-                            </button>
-                        </div>
-                        <!-- ViewMore Btn Two -->
-                    </section>
-                    <!-- ===== End Product Panel one Section ===== -->
+                                <tr class="wishlist__row">
+                                    <td class="wishlist__column wishlist__column--image">
+                                        <div class="wishlist__product-image"><a href=""
+                                                class="wishlist__product-image__body"><img
+                                                    class="wishlist__product-image__img"
+                                                    src="./assets/img/products/product-5.jpg" alt=""></a></div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--product">
+                                        <div>
+                                            <a href="" class="wishlist__product-name">Electric
+                                                Planer Brandix
+                                                KL370090G 300
+                                                Watts</a>
+                                            <span class="wishlist__due-product">Only 4 items left.</span>
+                                        </div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--stock">
+                                        <div class="badge badge-success">In Stock</div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--price"><span>$699.00</span></td>
+                                    <td class="wishlist__column wishlist__column--tocart"><a href="#"
+                                            class="btn btn-fill-out"><span class="material-icons-outlined pr-1">
+                                                shopping_cart
+                                            </span> Add to Cart</a></td>
+                                    <td class="wishlist__column wishlist__column--remove">
+                                        <button type="button" class="btn wishlist__btn-svg-icon">
+                                            <svg width="12px" height="12px">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                                                    id="cross-12">
+                                                    <path
+                                                        d="M10.8 10.8c-.4.4-1 .4-1.4 0L6 7.4l-3.4 3.4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4L4.6 6 1.2 2.6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L6 4.6l3.4-3.4c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L7.4 6l3.4 3.4c.4.4.4 1 0 1.4z">
+                                                    </path>
+                                                </svg>
+                                            </svg>
+                                        </button></td>
+                                </tr>
+                                <tr class="wishlist__row">
+                                    <td class="wishlist__column wishlist__column--image">
+                                        <div class="wishlist__product-image"><a href=""
+                                                class="wishlist__product-image__body"><img
+                                                    class="wishlist__product-image__img"
+                                                    src="./assets/img/products/product-8.jpg" alt=""></a></div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--product">
+                                        <div>
+                                            <a href="" class="wishlist__product-name">Electric
+                                                Planer Brandix
+                                                KL370090G 300
+                                                Watts</a>
+                                            <span class="wishlist__due-product">Only 4 items left.</span>
+                                        </div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--stock">
+                                        <div class="badge badge-success">In Stock</div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--price"><span>$699.00</span></td>
+                                    <td class="wishlist__column wishlist__column--tocart"><a href="#"
+                                            class="btn btn-fill-out"><span class="material-icons-outlined pr-1">
+                                                shopping_cart
+                                            </span> Add to Cart</a></td>
+                                    <td class="wishlist__column wishlist__column--remove">
+                                        <button type="button" class="btn wishlist__btn-svg-icon">
+                                            <svg width="12px" height="12px">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                                                    id="cross-12">
+                                                    <path
+                                                        d="M10.8 10.8c-.4.4-1 .4-1.4 0L6 7.4l-3.4 3.4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4L4.6 6 1.2 2.6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L6 4.6l3.4-3.4c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L7.4 6l3.4 3.4c.4.4.4 1 0 1.4z">
+                                                    </path>
+                                                </svg>
+                                            </svg>
+                                        </button></td>
+                                </tr>
+                                <tr class="wishlist__row">
+                                    <td class="wishlist__column wishlist__column--image">
+                                        <div class="wishlist__product-image"><a href=""
+                                                class="wishlist__product-image__body"><img
+                                                    class="wishlist__product-image__img"
+                                                    src="./assets/img/products/product-7.jpg" alt=""></a></div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--product">
+                                        <div>
+                                            <a href="" class="wishlist__product-name">Electric
+                                                Planer Brandix
+                                                KL370090G 300
+                                                Watts</a>
+                                            <span class="wishlist__due-product">Only 4 items left.</span>
+                                        </div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--stock">
+                                        <div class="badge badge-success">In Stock</div>
+                                    </td>
+                                    <td class="wishlist__column wishlist__column--price"><span>$699.00</span></td>
+                                    <td class="wishlist__column wishlist__column--tocart"><a href="#"
+                                            class="btn btn-fill-out"><span class="material-icons-outlined pr-1">
+                                                shopping_cart
+                                            </span> Add to Cart</a></td>
+                                    <td class="wishlist__column wishlist__column--remove">
+                                        <button type="button" class="btn wishlist__btn-svg-icon">
+                                            <svg width="12px" height="12px">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12"
+                                                    id="cross-12">
+                                                    <path
+                                                        d="M10.8 10.8c-.4.4-1 .4-1.4 0L6 7.4l-3.4 3.4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4L4.6 6 1.2 2.6c-.4-.4-.4-1 0-1.4.4-.4 1-.4 1.4 0L6 4.6l3.4-3.4c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L7.4 6l3.4 3.4c.4.4.4 1 0 1.4z">
+                                                    </path>
+                                                </svg>
+                                            </svg>
+                                        </button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- ===== End Wishlist Product  Items Section ===== -->
                 </section>
                 <!-- End ProductList Container -->
             </section>

@@ -20,11 +20,16 @@
 @import './components/pagination';
 @import './components/reviewstar';
 @import './components/product-shorting';
+@import './components/badge';
+@import './components/quantitybox';
 // pages
 @import './pages/home';
 @import './pages/productlist';
 @import './pages/shop-productlist';
 @import './pages/productview';
+@import './pages/wishlist';
+@import './pages/cart';
+@import './pages/checkout';
 // Layouts
 @import './layouts/header';
 @import './layouts/footer';

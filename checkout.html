@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop List | E-Project</title>
+    <title>Checkout | E-Project</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
     <link rel="icon" type="image/icon" href="./assets/img/favicon.ico" />
@@ -585,9 +585,8 @@
         <!-- ========= END SideNav Section ======= -->
 
         <!-- ========= Start Main Home Wrapper ======= -->
-
-        <main class="main-wrapper" style="background-color: #f7f8fa; margin-bottom: 0px">
-            <section class="main-content container mx-auto flex flex-col" style="margin-bottom: 0px">
+        <main class="main-wrapper">
+            <section class="main-content container mx-auto flex flex-col" style="margin-bottom: 0px;">
                 <!-- Start Breadcrumb -->
                 <nav aria-label="breadcrumb" class="breadcrumb-nav">
                     <div class="container">
@@ -596,349 +595,247 @@
                                 <a href="index-2.html"><span class="material-icons-outlined"> home </span></a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                <a href="#">Shop List</a>
+                                <a href="#">Checkout</a>
                             </li>
                         </ol>
                     </div>
                 </nav>
                 <!-- End Breadcrumb -->
 
-                <!-- Start ProductList Container -->
-                <section class="productlist-section-container flex flex-row-reverse w-full" style="margin-bottom: 0px">
-                    <!-- ===== Start Product Panel one Section ===== -->
-                    <section class="w-full flex flex-col items-center px-4">
-                        <!-- Start Shorting -->
-                        <nav class="toolbox mb-10">
-                            <div class="toolbox-left">
-                                <span class="p-3 text-gray-700 text-4xl font-semibold mr-10">Shops - Cash On
-                                    Delivery</span>
+                <!-- Start Checkout Container -->
+                <section class="checkout-section-container flex flex-row w-full" style="margin-bottom: 0px;">
+                    <div class="container checkout w-full">
+                        <div class="w-full mb-12">
+                            <div class="alert alert-lg alert-primary">Returning customer? <a href="">Click here
+                                    to login</a></div>
+                        </div>
+                        <div class="checkout-container flex">
+                            <div class="w-7/12 mr-12">
+                                <div class="card lg:mb-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Billing details</h3>
+                                        <div class="form-row">
+                                            <div class="form-group w-1/2 pr-2"><label for="checkout-first-name">First
+                                                    Name</label> <input type="text" class="form-control"
+                                                    id="checkout-first-name" placeholder="First Name"></div>
+                                            <div class="form-group w-1/2 pl-2"><label for="checkout-last-name">Last
+                                                    Name</label> <input type="text" class="form-control"
+                                                    id="checkout-last-name" placeholder="Last Name"></div>
+                                        </div>
+                                        <div class="form-group"><label for="checkout-company-name">Company Name
+                                                <span class="text-muted">(Optional)</span></label> <input type="text"
+                                                class="form-control" id="checkout-company-name"
+                                                placeholder="Company Name"></div>
+                                        <div class="form-group"><label for="checkout-country">Country</label>
+                                            <select id="checkout-country" class="form-control">
+                                                <option data-select2-id="2">Select a country...</option>
+                                                <option>United States</option>
+                                                <option>Russia</option>
+                                                <option>Italy</option>
+                                                <option>France</option>
+                                                <option>Ukraine</option>
+                                                <option>Germany</option>
+                                                <option>Australia</option>
+                                            </select>
+                                        </div>
 
-                                <div class="toolbox-item toolbox-sort">
-                                    <div class="select-custom">
-                                        <select name="orderby" class="form-control">
-                                            <option value="menu_order" selected="selected">
-                                                Default sorting
-                                            </option>
-                                            <option value="popularity">
-                                                Sort by popularity
-                                            </option>
-                                            <option value="rating">
-                                                Sort by average rating
-                                            </option>
-                                            <option value="date">Sort by newness</option>
-                                            <option value="price">
-                                                Sort by price: low to high
-                                            </option>
-                                            <option value="price-desc">
-                                                Sort by price: high to low
-                                            </option>
-                                        </select>
+                                        <div class="form-group"><label for="checkout-street-address">Street
+                                                Address</label> <input type="text" class="form-control"
+                                                id="checkout-street-address" placeholder="Street Address"></div>
+                                        <div class="form-group"><label for="checkout-address">Apartment, suite, unit
+                                                etc. <span class="text-muted">(Optional)</span></label> <input
+                                                type="text" class="form-control" id="checkout-address"></div>
+                                        <div class="form-group"><label for="checkout-city">Town / City</label>
+                                            <input type="text" class="form-control" id="checkout-city"></div>
+                                        <div class="form-group"><label for="checkout-state">State / County</label>
+                                            <input type="text" class="form-control" id="checkout-state"></div>
+                                        <div class="form-group"><label for="checkout-postcode">Postcode /
+                                                ZIP</label> <input type="text" class="form-control"
+                                                id="checkout-postcode"></div>
+                                        <div class="form-row">
+                                            <div class="form-group w-1/2 pr-2"><label for="checkout-email">Email
+                                                    address</label> <input type="email" class="form-control"
+                                                    id="checkout-email" placeholder="Email address"></div>
+                                            <div class="form-group w-1/2 pl-2"><label for="checkout-phone">Phone</label>
+                                                <input type="text" class="form-control" id="checkout-phone"
+                                                    placeholder="Phone">
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="form-check"><span class="form-check-input input-check"><span
+                                                        class="input-check__body"><input class="input-check__input"
+                                                            type="checkbox" id="checkout-create-account"> <span
+                                                            class="input-check__box"></span> <svg
+                                                            class="input-check__icon" width="9px" height="7px">
+                                                            <use
+                                                                xlink:href="./assets/dist/icons/checkicon.svg#icon-tick">
+                                                            </use>
+                                                        </svg> </span></span><label class="form-check-label"
+                                                    for="checkout-create-account">Create an account?</label></div>
+                                        </div>
                                     </div>
-                                    <!-- End .select-custom -->
-
-                                    <a href="#" class="sorter-btn" title="Set Ascending Direction"><span
-                                            class="sr-only">Set Ascending Direction</span></a>
+                                    <div class="card-divider"></div>
+                                    <div class="card-body">
+                                        <h3 class="card-title">Shipping Details</h3>
+                                        <div class="form-group">
+                                            <div class="form-check"><span class="form-check-input input-check"><span
+                                                        class="input-check__body"><input class="input-check__input"
+                                                            type="checkbox" id="checkout-different-address"> <span
+                                                            class="input-check__box"></span> <svg
+                                                            class="input-check__icon" width="9px" height="7px">
+                                                            <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                        </svg> </span></span><label class="form-check-label"
+                                                    for="checkout-different-address">Ship to a different
+                                                    address?</label></div>
+                                        </div>
+                                        <div class="form-group"><label for="checkout-comment">Order notes <span
+                                                    class="text-muted">(Optional)</span></label>
+                                            <textarea id="checkout-comment" class="form-control" rows="4" style="width: 100%;
+                                                height: 120px;"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
-                                <!-- End .toolbox-item -->
                             </div>
-                            <!-- End .toolbox-left -->
-                            <!-- Search Box -->
-                            <div class="search-box">
-                                <input type="text" placeholder="Search..." value="" class="search-box__input" />
-                                <figure class="search-box__figure">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                        _css2="
-                                    @media (max-width: ,768px,) {
-                                      ,
-                                            font-size:20px;
-                                          ,
-                                    }
-                                  " class="search-box__icon" height="1em" width="1em"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                        </path>
-                                    </svg>
-                                </figure>
-                            </div>
-                            <!-- End .layout-modes -->
-                        </nav>
-                        <!-- End Shorting -->
-
-                        <!-- Start -- All Shops Panel -->
-                        <div
-                            class="all-shop text-center w-full grid grid-cols-2 gap-4 my-4 md:grid-cols-5 lg:grid-cols-6">
-                            <div class="top-shop__container shadow p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
+                            <div class="w-5/12">
+                                <div class="card mb-0">
+                                    <div class="card-body">
+                                        <h3 class="card-title">Your Order</h3>
+                                        <table class="checkout__totals">
+                                            <thead class="checkout__totals-header">
+                                                <tr>
+                                                    <th>Product</th>
+                                                    <th>Total</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="checkout__totals-products">
+                                                <tr>
+                                                    <td>Electric Planer Brandix KL370090G 300 Watts × 2</td>
+                                                    <td>$1,398.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Undefined Tool IRadix DPS3000SY 2700 watts × 1</td>
+                                                    <td>$849.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Brandix Router Power Tool 2017ERXPK × 3</td>
+                                                    <td>$3,630.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody class="checkout__totals-subtotals">
+                                                <tr>
+                                                    <th>Subtotal</th>
+                                                    <td>$5,877.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Store Credit</th>
+                                                    <td>$-20.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Shipping</th>
+                                                    <td>$25.00</td>
+                                                </tr>
+                                            </tbody>
+                                            <tfoot class="checkout__totals-footer">
+                                                <tr>
+                                                    <th>Total</th>
+                                                    <td>$5,882.00</td>
+                                                </tr>
+                                            </tfoot>
+                                        </table>
+                                        <div class="payment-methods">
+                                            <ul class="payment-methods__list">
+                                                <li class="payment-methods__item payment-methods__item--active">
+                                                    <label class="payment-methods__item-header"><span
+                                                            class="payment-methods__item-radio input-radio"><span
+                                                                class="input-radio__body"><input
+                                                                    class="input-radio__input"
+                                                                    name="checkout_payment_method" type="radio"
+                                                                    checked="checked"> <span
+                                                                    class="input-radio__circle"></span>
+                                                            </span></span><span
+                                                            class="payment-methods__item-title">Direct bank
+                                                            transfer</span></label>
+                                                    <div class="payment-methods__item-container">
+                                                        <div class="payment-methods__item-description text-muted">
+                                                            Make your payment directly into our bank account. Please
+                                                            use your Order ID as the payment reference. Your order
+                                                            will not be shipped until the funds have cleared in our
+                                                            account.</div>
+                                                    </div>
+                                                </li>
+                                                <li class="payment-methods__item"><label
+                                                        class="payment-methods__item-header"><span
+                                                            class="payment-methods__item-radio input-radio"><span
+                                                                class="input-radio__body"><input
+                                                                    class="input-radio__input"
+                                                                    name="checkout_payment_method" type="radio">
+                                                                <span class="input-radio__circle"></span>
+                                                            </span></span><span
+                                                            class="payment-methods__item-title">Check
+                                                            payments</span></label>
+                                                    <div class="payment-methods__item-container">
+                                                        <div class="payment-methods__item-description text-muted">
+                                                            Please send a check to Store Name, Store Street, Store
+                                                            Town, Store State / County, Store Postcode.</div>
+                                                    </div>
+                                                </li>
+                                                <li class="payment-methods__item"><label
+                                                        class="payment-methods__item-header"><span
+                                                            class="payment-methods__item-radio input-radio"><span
+                                                                class="input-radio__body"><input
+                                                                    class="input-radio__input"
+                                                                    name="checkout_payment_method" type="radio">
+                                                                <span class="input-radio__circle"></span>
+                                                            </span></span><span class="payment-methods__item-title">Cash
+                                                            on
+                                                            delivery</span></label>
+                                                    <div class="payment-methods__item-container">
+                                                        <div class="payment-methods__item-description text-muted">
+                                                            Pay with cash upon delivery.</div>
+                                                    </div>
+                                                </li>
+                                                <li class="payment-methods__item"><label
+                                                        class="payment-methods__item-header"><span
+                                                            class="payment-methods__item-radio input-radio"><span
+                                                                class="input-radio__body"><input
+                                                                    class="input-radio__input"
+                                                                    name="checkout_payment_method" type="radio">
+                                                                <span class="input-radio__circle"></span>
+                                                            </span></span><span
+                                                            class="payment-methods__item-title">PayPal</span></label>
+                                                    <div class="payment-methods__item-container">
+                                                        <div class="payment-methods__item-description text-muted">
+                                                            Pay via PayPal; you can pay with your credit card if you
+                                                            don’t have a PayPal account.</div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="checkout__agree form-group">
+                                            <div class="form-check"><span class="form-check-input input-check"><span
+                                                        class="input-check__body"><input class="input-check__input"
+                                                            type="checkbox" id="checkout-terms"> <span
+                                                            class="input-check__box"></span> <svg
+                                                            class="input-check__icon" width="9px" height="7px">
+                                                            <use xlink:href="images/sprite.svg#check-9x7"></use>
+                                                        </svg> </span></span><label style="font-size: 1.5rem;"
+                                                    class="form-check-label" for="checkout-terms">I have read and agree
+                                                    to the website <a target="_blank"
+                                                        href="terms-and-conditions.html">terms and
+                                                        conditions</a>*</label></div>
+                                        </div><button style="display: flex;
+                                        justify-content: 100%;
+                                        width: 100%;
+                                        justify-content: center;
+                                        padding: 16px;
+                                        font-size: 18px;" class="btn btn-fill-out btn-fill-out--coupon"
+                                            type="submit">Confirm
+                                            Order</button>
                                     </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Rupok Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Evaly Express
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Sports One
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            E-Zadu
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Party Wary
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Rupok Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Evaly Express
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Sports One
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            E-Zadu
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Party Wary
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
-                        <!-- End --  All Shops Panel -->
-
-                        <!-- ViewMore Btn Two -->
-                        <div class="flex w-full items-center justify-center p-8 pb-4">
-                            <button class="btn-two w-1/4 p-5 border border-gray-700">
-                                <span class="whitespace-no-wrap font-semibold text-2xl">View more</span>
-                            </button>
-                        </div>
-                        <!-- ViewMore Btn Two -->
-                    </section>
-                    <!-- ===== End Product Panel one Section ===== -->
+                    </div>
                 </section>
                 <!-- End ProductList Container -->
             </section>

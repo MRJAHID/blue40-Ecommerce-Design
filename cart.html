@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop List | E-Project</title>
+    <title>Cart | E-Project</title>
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/apple-touch-icon.png" />
     <link rel="icon" type="image/icon" href="./assets/img/favicon.ico" />
@@ -585,9 +585,8 @@
         <!-- ========= END SideNav Section ======= -->
 
         <!-- ========= Start Main Home Wrapper ======= -->
-
-        <main class="main-wrapper" style="background-color: #f7f8fa; margin-bottom: 0px">
-            <section class="main-content container mx-auto flex flex-col" style="margin-bottom: 0px">
+        <main class="main-wrapper">
+            <section class="main-content container mx-auto flex flex-col" style="margin-bottom: 0px;">
                 <!-- Start Breadcrumb -->
                 <nav aria-label="breadcrumb" class="breadcrumb-nav">
                     <div class="container">
@@ -596,7 +595,7 @@
                                 <a href="index-2.html"><span class="material-icons-outlined"> home </span></a>
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                <a href="#">Shop List</a>
+                                <a href="#">Cart</a>
                             </li>
                         </ol>
                     </div>
@@ -604,341 +603,211 @@
                 <!-- End Breadcrumb -->
 
                 <!-- Start ProductList Container -->
-                <section class="productlist-section-container flex flex-row-reverse w-full" style="margin-bottom: 0px">
-                    <!-- ===== Start Product Panel one Section ===== -->
-                    <section class="w-full flex flex-col items-center px-4">
-                        <!-- Start Shorting -->
-                        <nav class="toolbox mb-10">
-                            <div class="toolbox-left">
-                                <span class="p-3 text-gray-700 text-4xl font-semibold mr-10">Shops - Cash On
-                                    Delivery</span>
+                <section class="wishlist-section-container flex flex-row w-full" style="margin-bottom: 0px;">
+                    <!-- ===== Start Wishlist Product  Items Section ===== -->
+                    <div class="container w-8/12">
+                        <div class="table-responsive shop_cart_table">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="product-thumbnail">&nbsp;</th>
+                                        <th class="product-name">Product</th>
+                                        <th class="product-price">Price</th>
+                                        <th class="product-quantity">Quantity</th>
+                                        <th class="product-subtotal">Total</th>
+                                        <th class="product-remove">Remove</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="#"><img
+                                                    src="./assets/img/products/product_img1.jpg" alt="product1"></a>
+                                        </td>
+                                        <td class="product-name" data-title="Product"><a href="#">Blue Dress For
+                                                Woman</a></td>
+                                        <td class="product-price" data-title="Price">$45.00</td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="2" title="Qty" class="qty"
+                                                    size="4">
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Total">$90.00</td>
+                                        <td class="product-remove" data-title="Remove"><a href="#"><span
+                                                    class="material-icons-outlined">
+                                                    close
+                                                </span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="#"><img
+                                                    src="./assets/img/products/product_img6.jpg" alt="product2"></a>
+                                        </td>
+                                        <td class="product-name" data-title="Product"><a href="#">Lether Gray Tuxedo</a>
+                                        </td>
+                                        <td class="product-price" data-title="Price">$55.00</td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="1" title="Qty" class="qty"
+                                                    size="4">
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Total">$55.00</td>
+                                        <td class="product-remove" data-title="Remove"><a href="#"><span
+                                                    class="material-icons-outlined">
+                                                    close
+                                                </span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="#"><img
+                                                    src="./assets/img/products/product_img3.jpg" alt="product3"></a>
+                                        </td>
+                                        <td class="product-name" data-title="Product"><a href="#">woman full sliv
+                                                dress</a></td>
+                                        <td class="product-price" data-title="Price">$68.00</td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="3" title="Qty" class="qty"
+                                                    size="4">
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Total">$204.00</td>
+                                        <td class="product-remove" data-title="Remove"><a href="#"><span
+                                                    class="material-icons-outlined">
+                                                    close
+                                                </span></a></td>
+                                    </tr>
 
-                                <div class="toolbox-item toolbox-sort">
-                                    <div class="select-custom">
-                                        <select name="orderby" class="form-control">
-                                            <option value="menu_order" selected="selected">
-                                                Default sorting
-                                            </option>
-                                            <option value="popularity">
-                                                Sort by popularity
-                                            </option>
-                                            <option value="rating">
-                                                Sort by average rating
-                                            </option>
-                                            <option value="date">Sort by newness</option>
-                                            <option value="price">
-                                                Sort by price: low to high
-                                            </option>
-                                            <option value="price-desc">
-                                                Sort by price: high to low
-                                            </option>
-                                        </select>
-                                    </div>
-                                    <!-- End .select-custom -->
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="#"><img
+                                                    src="./assets/img/products/product_img1.jpg" alt="product1"></a>
+                                        </td>
+                                        <td class="product-name" data-title="Product"><a href="#">Blue Dress For
+                                                Woman</a></td>
+                                        <td class="product-price" data-title="Price">$45.00</td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="2" title="Qty" class="qty"
+                                                    size="4">
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Total">$90.00</td>
+                                        <td class="product-remove" data-title="Remove"><a href="#"><span
+                                                    class="material-icons-outlined">
+                                                    close
+                                                </span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="#"><img
+                                                    src="./assets/img/products/product_img6.jpg" alt="product2"></a>
+                                        </td>
+                                        <td class="product-name" data-title="Product"><a href="#">Lether Gray Tuxedo</a>
+                                        </td>
+                                        <td class="product-price" data-title="Price">$55.00</td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="1" title="Qty" class="qty"
+                                                    size="4">
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Total">$55.00</td>
+                                        <td class="product-remove" data-title="Remove"><a href="#"><span
+                                                    class="material-icons-outlined">
+                                                    close
+                                                </span></a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="product-thumbnail"><a href="#"><img
+                                                    src="./assets/img/products/product_img3.jpg" alt="product3"></a>
+                                        </td>
+                                        <td class="product-name" data-title="Product"><a href="#">woman full sliv
+                                                dress</a></td>
+                                        <td class="product-price" data-title="Price">$68.00</td>
+                                        <td class="product-quantity" data-title="Quantity">
+                                            <div class="quantity">
+                                                <input type="button" value="-" class="minus">
+                                                <input type="text" name="quantity" value="3" title="Qty" class="qty"
+                                                    size="4">
+                                                <input type="button" value="+" class="plus">
+                                            </div>
+                                        </td>
+                                        <td class="product-subtotal" data-title="Total">$204.00</td>
+                                        <td class="product-remove" data-title="Remove"><a href="#"><span
+                                                    class="material-icons-outlined">
+                                                    close
+                                                </span></a></td>
+                                    </tr>
+                                </tbody>
 
-                                    <a href="#" class="sorter-btn" title="Set Ascending Direction"><span
-                                            class="sr-only">Set Ascending Direction</span></a>
-                                </div>
-                                <!-- End .toolbox-item -->
-                            </div>
-                            <!-- End .toolbox-left -->
-                            <!-- Search Box -->
-                            <div class="search-box">
-                                <input type="text" placeholder="Search..." value="" class="search-box__input" />
-                                <figure class="search-box__figure">
-                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
-                                        _css2="
-                                    @media (max-width: ,768px,) {
-                                      ,
-                                            font-size:20px;
-                                          ,
-                                    }
-                                  " class="search-box__icon" height="1em" width="1em"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z">
-                                        </path>
-                                    </svg>
-                                </figure>
-                            </div>
-                            <!-- End .layout-modes -->
-                        </nav>
-                        <!-- End Shorting -->
-
-                        <!-- Start -- All Shops Panel -->
-                        <div
-                            class="all-shop text-center w-full grid grid-cols-2 gap-4 my-4 md:grid-cols-5 lg:grid-cols-6">
-                            <div class="top-shop__container shadow p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Rupok Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Evaly Express
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Sports One
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            E-Zadu
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Party Wary
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/2019-05-21_093935.67708044.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Rupok Fashion
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/80f0ac04fb6c-feni.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Evaly Express
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/493042b46455-sports-one-logo-96px.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Sports One
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/99497405d955-cover.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            E-Zadu
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/media/images/3a3a7d83668a-patwari-logoevaly-png.png"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Party Wary
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="top-shop__container p-3">
-                                <a href="#">
-                                    <div class="top-shop__img">
-                                        <img class=""
-                                            src="https://s3-ap-southeast-1.amazonaws.com/media.evaly.com.bd/watermarked/2018-12-18_103131.16930937.jpg"
-                                            alt="Brands One" />
-                                    </div>
-                                    <div class="top-shop__text py-2">
-                                        <p title="Smart Gadget"
-                                            class="text-xl font-semibold hover:text-blue-400 text-center text-gray-700">
-                                            Smart Gadget
-                                        </p>
-                                    </div>
-                                </a>
-                            </div>
+                            </table>
                         </div>
-                        <!-- End --  All Shops Panel -->
+                    </div>
+                    <!-- ===== End Wishlist Product  Items Section ===== -->
 
-                        <!-- ViewMore Btn Two -->
-                        <div class="flex w-full items-center justify-center p-8 pb-4">
-                            <button class="btn-two w-1/4 p-5 border border-gray-700">
-                                <span class="whitespace-no-wrap font-semibold text-2xl">View more</span>
-                            </button>
+                    <div class="w-4/12">
+                        <div class="p-5" style="border: 1px solid #dee2e6 !important;">
+                            <div class="heading_s1 mb-5">
+                                <h6 class="text-2xl font-bold capitalize m-0 text-gray-800">Cart Totals</h6>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table cart_total_table text-gray-800">
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-2xl text-gray-800 border-r border-gray-300">Cart Subtotal
+                                            </td>
+                                            <td class="text-2xl text-gray-800">$349.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-2xl text-gray-800 border-r border-gray-300">Shipping</td>
+                                            <td class="text-2xl text-gray-800">Free Shipping</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="text-2xl text-gray-800 border-r border-gray-300">Total</td>
+                                            <td class="text-2xl text-gray-800"><strong>$349.00</strong></td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+                            </div>
+                            <table class="w-full">
+                                <tfoot>
+                                    <tr>
+                                        <td style="padding: 1.2rem 0;" class="px-0">
+                                            <div class="mx-0 flex items-center">
+                                                <div class="w-full flex">
+                                                    <div class="w-full flex">
+                                                        <input type="text" value=""
+                                                            class="p-3 coupon_input_box rounded-sm border border-gray-200"
+                                                            placeholder="Enter Coupon Code..">
+                                                        <div class="ml-1">
+                                                            <button class="btn btn-fill-out btn-fill-out--coupon"
+                                                                type="submit">Apply
+                                                                Coupon</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <a href="#" class="btn btn-fill-out mt-6" style="width: fit-content;">Proceed To CheckOut
+                                <span class="material-icons-outlined pl-1">
+                                    arrow_right_alt
+                                </span></a>
                         </div>
-                        <!-- ViewMore Btn Two -->
-                    </section>
-                    <!-- ===== End Product Panel one Section ===== -->
+                    </div>
                 </section>
                 <!-- End ProductList Container -->
             </section>

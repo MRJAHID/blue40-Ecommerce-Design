@@ -1,0 +1,49 @@
+.badge {
+    display: inline-block;
+    padding: .5em 1em;
+    font-size: 100%;
+    font-weight: 700;
+    border-radius: 1.5px;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+
+.badge-success {
+    color: #fff;
+    background-color: #28a745;
+}
+
+
+// Alert
+
+.alert {
+    position: relative;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    line-height: 20px;
+    padding: 2rem 2rem;
+    font-weight: 600;
+
+    a {
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        color: currentColor;
+        background: #ffffff80;
+        border-radius: 1.5px;
+        padding: 0 3px;
+    }
+}
+
+.alert-primary {
+    border-color: #b8daff;
+
+    background: #b2d9ff;
+    color: #36414d;
+}
