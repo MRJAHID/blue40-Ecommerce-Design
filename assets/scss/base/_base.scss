@@ -8,7 +8,6 @@
 
 input:focus,
 select:focus,
-
 textarea:focus {
     color: #495057;
     background-color: #fff;
@@ -32,8 +31,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-input[type=checkbox],
-input[type=radio] {
+input[type='checkbox'],
+input[type='radio'] {
     box-sizing: border-box;
     padding: 0;
 }
@@ -63,7 +62,6 @@ button:active:focus {
     box-shadow: none !important;
     outline: 0 !important;
 }
-
 
 @media (min-width: 992px) {
     .container {
@@ -114,7 +112,7 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar {
-    width: 7px;
+    width: 10px;
     background-color: #f5f5f5;
 }
 
@@ -122,12 +120,14 @@ body::-webkit-scrollbar-thumb {
     background-color: #0ae;
     border-radius: 33px;
 
-    background-image: -webkit-gradient(linear,
-            0 0,
-            0 100%,
-            color-stop(0.5, rgba(255, 255, 255, 0.2)),
-            color-stop(0.5, transparent),
-            to(transparent));
+    background-image: -webkit-gradient(
+        linear,
+        0 0,
+        0 100%,
+        color-stop(0.5, rgba(255, 255, 255, 0.2)),
+        color-stop(0.5, transparent),
+        to(transparent)
+    );
 }
 
 .divider {

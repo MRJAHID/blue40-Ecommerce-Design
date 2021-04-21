@@ -1,7 +1,7 @@
 .header {
     &__content {
-        background-color: $primary-color;
-        box-shadow: 0 28px 57px rgba(0, 0, 0, 0.06);
+        background-color: #fff;
+        box-shadow: 0 31px 62px rgba(0, 0, 0, 0.06);
     }
 
     &__content &__right {
@@ -10,27 +10,33 @@
     }
     &__user &__user--icon1 {
         border-radius: 50%;
-        border: 1px solid #f4f4f4;
+        border: 1px solid $primary-color;
+        color: $primary-color;
         padding: 4px;
         width: 34px;
         height: 34px;
         margin-right: 1rem;
+        &:hover {
+            color: #000;
+        }
     }
     &__user--icon {
         font-size: 30px;
-        margin-left: 1rem;
+        margin-left: 1.5rem;
         margin-bottom: 2px;
         color: #fff;
         display: flex;
         span {
-            font-size: 27px;
-        }
-        :hover {
-            color: #fff;
+            font-size: 23px;
+            color: $primary-color;
+            &:hover {
+                color: #000;
+            }
         }
     }
     &__userinfo {
         letter-spacing: 0.01em;
+        color: $primary-color;
     }
     &__search {
         font-size: 0;
@@ -43,6 +49,8 @@
             position: relative;
             width: 100%;
             min-width: 250px;
+            border: 2px solid #01abec;
+            border-radius: 7px;
             ::after {
                 display: block;
                 clear: both;
@@ -65,15 +73,28 @@
         &--input-box {
             font-size: 1.4rem;
             flex: 1 1 auto;
-            width: 450px;
+            width: 650px;
+            height: 40px;
             max-width: none;
             margin: 0;
             padding: 4px 25px;
             border: none;
-            border-radius: 30px 0 0 30px;
+            border-radius: 6px 0 0 6px;
             color: #8d8d8d;
             line-height: 20px;
             box-shadow: none;
+            ::-webkit-input-placeholder {
+                color: #8d8d8d;
+            }
+            ::-moz-placeholder {
+                color: #8d8d8d;
+            }
+            :-ms-input-placeholder {
+                color: #8d8d8d;
+            }
+            ::-ms-input-placeholder {
+                color: #8d8d8d;
+            }
             ::placeholder {
                 color: #8d8d8d;
             }
@@ -116,12 +137,14 @@
             border-left: 1px solid #e7e7e7;
             padding: 0 3px 0 0;
             margin: 0;
-            background-color: #fff;
+            background-color: $primary-color;
             cursor: pointer;
-            border-radius: 0 30px 30px 0;
+            span {
+                color: #fff;
+            }
             :hover,
             :focus {
-                color: #01abec;
+                color: #fff;
             }
             i::before {
                 margin: 0;
