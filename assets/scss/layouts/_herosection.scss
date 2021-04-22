@@ -1,3 +1,6 @@
+// .hero-section {
+//     height: 75vh;
+// }
 // Flash Deal
 .heroflash-product {
     border: 1px solid #e8e8e8;
@@ -107,4 +110,26 @@
     top: 3px;
     border-radius: 10px;
     background-color: #222529;
+}
+
+.heroslider-section {
+    width: calc(100% - 225px);
+    margin-left: auto;
+}
+
+// hero-nav-categories
+.side-nav.hero-nav-categories {
+    position: initial;
+    height: auto;
+    width: 100%;
+    top: 0px;
+    margin-top: -20px;
+    height: 69vh;
+    overflow-y: auto;
+    border-right: none;
+    z-index: 0;
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.16);
+}
+.side-nav.hero-nav-categories .sidebar-navigation ul li a {
+    font-weight: 500;
 }

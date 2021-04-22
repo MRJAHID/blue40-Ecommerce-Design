@@ -84,7 +84,7 @@ function clicked() {
         nav.style = 'left:0';
         j++;
     } else {
-        nav.style = 'left:-270px';
+        nav.style = 'left:-300px';
         j--;
     }
 }

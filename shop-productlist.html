@@ -435,20 +435,29 @@
 
         <!-- ========= Start Heading Section ======= -->
         <header class="header sticky top-0 z-50">
-            <div class="header__content py-6">
-                <div class="w-full mx-auto px-16 flex items-center justify-between relative">
+            <div class="header__content py-9">
+                <div
+                    class="w-full container mx-auto px-16 flex items-center justify-between relative"
+                >
                     <!-- Header left side -->
                     <div class="header__left">
                         <div class="flex">
-                            <div class="side-nav__hamburger cursor-pointer">
-                                <span class="material-icons-outlined text-white mr-9" style="font-size: 31px">
+                            <!-- <div class="side-nav__hamburger cursor-pointer">
+                                <span
+                                    class="material-icons-outlined text-white mr-9"
+                                    style="font-size: 31px"
+                                >
                                     menu
                                 </span>
-                            </div>
+                            </div> -->
                             <div>
-                                <a href="index-2.html" class="logo block">
-                                    <img src="./assets/img/logo2.png" style="height: 40px"
-                                        class="block max-w-full h-auto" alt="Logo" />
+                                <a href="index.html" class="logo block">
+                                    <img
+                                        src="./assets/img/logo2.png"
+                                        style="height: 40px"
+                                        class="block max-w-full h-auto"
+                                        alt="Logo"
+                                    />
                                 </a>
                             </div>
                         </div>
@@ -463,11 +472,19 @@
                             </a>
                             <form action="#" method="get">
                                 <div class="header__search--wrapper">
-                                    <input type="search" class="header__search--input-box" name="q" id="q"
-                                        placeholder="Search what you want..." required />
+                                    <input
+                                        type="search"
+                                        class="header__search--input-box"
+                                        name="q"
+                                        id="q"
+                                        placeholder="Search what you want..."
+                                        required
+                                    />
                                     <!-- End .select-custom -->
                                     <button class="header__search--btn" type="submit">
-                                        <span class="material-icons-outlined text-gray-500 w-8 h-8">
+                                        <span
+                                            class="material-icons-outlined text-gray-500 w-8 h-8"
+                                        >
                                             search
                                         </span>
                                     </button>
@@ -480,7 +497,9 @@
                     <!-- Header Right side -->
                     <div class="header__right flex items-center">
                         <a href="login.html">
-                            <div class="header__user flex items-center mr-8 text-white cursor-pointer">
+                            <div
+                                class="header__user flex items-center mr-8 text-white cursor-pointer"
+                            >
                                 <span class="material-icons-outlined header__user--icon1">
                                     perm_identity
                                 </span>
@@ -492,49 +511,203 @@
                         </a>
 
                         <a href="#" class="header__user--icon">
-                            <span class="material-icons-outlined"> favorite_border </span></a>
-                        <a href="#" class="header__user--icon"><span class="material-icons-outlined"> shopping_bag
-                            </span></a>
-                        <a href="#" class="header__user--icon"><span class="material-icons-outlined">
-                            chat_bubble_outline
-                            </span></a>
+                            <span class="material-icons-outlined"> favorite_border </span></a
+                        >
+                        <a href="#" class="header__user--icon"
+                            ><span class="material-icons-outlined"> shopping_bag </span></a
+                        >
+                        <a href="#" class="header__user--icon"
+                            ><span class="material-icons-outlined">
+                                chat_bubble_outline
+                            </span></a
+                        >
                     </div>
                     <!-- End Header Right side -->
                 </div>
             </div>
-        </header
-        <!-- ========= END Heading Section ======= -->
+            <!-- Header Bottom -->
+            <div
+                class="header-bottom text-white bg-gray-800"
+                style="box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.04)"
+            >
+                <div class="container mx-auto items-center hidden md:flex">
+                    <div class="bjucmO relative flex items-center self-stretch px-6 py-1">
+                        <div>
+                            <div
+                                class="flex items-center cursor-pointer select-none"
+                                role="button"
+                            >
+                                <button class="mr-6 text-3xl menu side-nav__hamburger">
+                                    <svg
+                                        stroke="currentColor"
+                                        fill="currentColor"
+                                        stroke-width="0"
+                                        viewBox="0 0 24 24"
+                                        height="1.5em"
+                                        width="1.5em"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                                <div class="flex justify-between">
+                                    <span class="mr-8 text-3xl font-bold">CATEGORIES</span
+                                    ><span class="mt-2"
+                                        ><svg
+                                            stroke="currentColor"
+                                            fill="none"
+                                            stroke-width="2"
+                                            viewBox="0 0 24 24"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            height="1.5em"
+                                            width="1.5em"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <polyline points="6 9 12 15 18 9"></polyline></svg
+                                    ></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-1 px-4 py-1 lg:px-8">
+                        <ul class="flex">
+                            <li class="px-2 py-2">
+                                <a
+                                    class="font-semibold px-4 py-1 text-2xl whitespace-no-wrap hover:underline null"
+                                    id="all-shops"
+                                    href="/shops"
+                                    >All Shops</a
+                                >
+                            </li>
+                            <li class="px-2 py-2">
+                                <a
+                                    id="gift-card"
+                                    class="font-semibold px-4 py-1 text-2xl whitespace-no-wrap hover:underline null"
+                                    href="/gift-card?type=gift-cards"
+                                    >Gift Card</a
+                                >
+                            </li>
+                            <li class="px-2 py-2">
+                                <a
+                                    id="campaigns"
+                                    class="font-semibold px-4 py-1 text-2xl whitespace-no-wrap hover:underline null"
+                                    href="/campaign"
+                                    >Campaigns</a
+                                >
+                            </li>
+                            <li class="px-2 py-2">
+                                <a
+                                    id="express"
+                                    class="font-semibold px-4 py-1 text-2xl whitespace-no-wrap hover:underline null"
+                                    href="/express"
+                                    >Express</a
+                                >
+                            </li>
+                            <li class="px-2 py-2">
+                                <a
+                                    class="font-semibold px-4 py-1 text-2xl whitespace-no-wrap"
+                                    href="https://cyclone.evaly.com.bd"
+                                    >Cyclone</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="justify-end py-1">
+                        <div class="xl:hidden">
+                            <button class="flex items-center">
+                                <svg
+                                    stroke="currentColor"
+                                    fill="none"
+                                    stroke-width="2"
+                                    viewBox="0 0 24 24"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    height="1em"
+                                    width="1em"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle cx="12" cy="12" r="1"></circle>
+                                    <circle cx="12" cy="5" r="1"></circle>
+                                    <circle cx="12" cy="19" r="1"></circle>
+                                </svg>
+                            </button>
+                        </div>
+                        <ul class="hidden xl:flex">
+                            <li class="px-6 py-2">
+                                <a
+                                    href="#"
+                                    class="Header__Header2LinkItem-sc-13j2zlw-2 jGEUNQ hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                    >News Feed</a
+                                >
+                            </li>
+                            <li class="px-6 py-2">
+                                <a
+                                    href="#"
+                                    class="Header__Header2LinkItem-sc-13j2zlw-2 jGEUNQ hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                    >Merchant Zone</a
+                                >
+                            </li>
+                            <li class="px-6 py-2 pr-0">
+                                <a
+                                    href="#"
+                                    class="Header__Header2LinkItem-sc-13j2zlw-2 jGEUNQ hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                    >Help</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- ========= END Heading Section ====== -->
 
         <!-- ========= Start SideNav Section ======= -->
         <section class="side-nav__section">
             <nav class="side-nav">
                 <div class="sidebar-navigation">
-                    <strong class="title"><span class="material-icons-outlined pr-2" style="font-size: 20px">
+                    <!-- <strong class="title"
+                        ><span class="material-icons-outlined pr-2" style="font-size: 20px">
                             layers
                         </span>
-                        Sidebar Menu</strong>
+                        Sidebar Menu</strong
+                    > -->
                     <ul>
                         <li>
-                            <a href="#" class="flex justify-between">Office Products
+                            <a href="#" class="flex justify-between"
+                                >Office Products
                                 <span style="font-size: 16px" class="material-icons-outlined">
                                     expand_more
-                                </span></a>
+                                </span></a
+                            >
                             <ul>
                                 <li>
-                                    <a href="#" class="flex justify-between">Writing
-                                        <span style="font-size: 16px" class="material-icons-outlined">
+                                    <a href="#" class="flex justify-between"
+                                        >Writing
+                                        <span
+                                            style="font-size: 16px"
+                                            class="material-icons-outlined"
+                                        >
                                             expand_more
-                                        </span></a>
+                                        </span></a
+                                    >
                                     <ul>
                                         <li><a href="#">Colors</a></li>
                                         <li><a href="#">Pens</a></li>
                                         <li><a href="#">Pencils</a></li>
                                         <li><a href="#">Notebooks</a></li>
                                         <li>
-                                            <a href="#" class="flex justify-between">Activity
-                                                <span style="font-size: 16px" class="material-icons-outlined">
+                                            <a href="#" class="flex justify-between"
+                                                >Activity
+                                                <span
+                                                    style="font-size: 16px"
+                                                    class="material-icons-outlined"
+                                                >
                                                     expand_more
-                                                </span></a>
+                                                </span></a
+                                            >
                                             <ul>
                                                 <li><a href="#">Mouse</a></li>
                                                 <li><a href="#">Laptop</a></li>
@@ -558,7 +731,8 @@
                                 Food
                                 <span style="font-size: 16px" class="material-icons-outlined">
                                     expand_more
-                                </span></a>
+                                </span></a
+                            >
                             <ul>
                                 <li><a href="#">All Reviews</a></li>
                                 <li><a href="#">Galleries</a></li>

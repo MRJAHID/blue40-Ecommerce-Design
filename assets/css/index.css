@@ -100,7 +100,7 @@ button:active:focus {
 
 @media (min-width: 1270px) {
   .container {
-    max-width: 1200px !important;
+    max-width: 1260px !important;
     padding: 0 10px;
   }
 }
@@ -3208,6 +3208,11 @@ select.form-control {
   margin: 0;
 }
 
+.header-bottom .bjucmO {
+  background-color: #01abec;
+  height: 45px;
+}
+
 .footer-section {
   background-color: #314855;
   margin-bottom: 0 !important;
@@ -3450,6 +3455,29 @@ select.form-control {
   top: 3px;
   border-radius: 10px;
   background-color: #222529;
+}
+
+.heroslider-section {
+  width: calc(100% - 225px);
+  margin-left: auto;
+}
+
+.side-nav.hero-nav-categories {
+  position: initial;
+  height: auto;
+  width: 100%;
+  top: 0px;
+  margin-top: -20px;
+  height: 69vh;
+  overflow-y: auto;
+  border-right: none;
+  z-index: 0;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.16);
+}
+
+.side-nav.hero-nav-categories .sidebar-navigation ul li a {
+  font-weight: 500;
 }
 
 .section-title {
@@ -4103,10 +4131,10 @@ section .section-title h2,
 
 .side-nav {
   position: fixed;
-  top: 80px;
+  top: 133px;
   height: calc(100vh - 50px);
-  left: -270px;
-  width: 260px;
+  left: -300px;
+  width: 280px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   background-color: #fff;
