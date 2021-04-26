@@ -969,13 +969,6 @@
                                         >Express</a
                                     >
                                 </li>
-                                <li class="px-2 py-2">
-                                    <a
-                                        class="font-semibold px-4 py-1 text-2xl whitespace-no-wrap"
-                                        href="https://cyclone.evaly.com.bd"
-                                        >Cyclone</a
-                                    >
-                                </li>
                             </ul>
                         </div>
                         <div class="justify-end py-1">
@@ -1002,21 +995,29 @@
                                 <li class="px-6 py-2">
                                     <a
                                         href="#"
-                                        class="Header__Header2LinkItem-sc-13j2zlw-2 jGEUNQ hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                        class="hover:text-gray-400 text-2xl whitespace-no-wrap"
                                         >News Feed</a
                                     >
                                 </li>
                                 <li class="px-6 py-2">
                                     <a
                                         href="#"
-                                        class="Header__Header2LinkItem-sc-13j2zlw-2 jGEUNQ hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                        class="hover:text-gray-400 text-2xl whitespace-no-wrap"
                                         >Merchant Zone</a
                                     >
                                 </li>
+                                <li class="px-6 py-2">
+                                    <a
+                                        href="#"
+                                        class="hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                        >Cyclone</a
+                                    >
+                                </li>
+
                                 <li class="px-6 py-2 pr-0">
                                     <a
                                         href="#"
-                                        class="Header__Header2LinkItem-sc-13j2zlw-2 jGEUNQ hover:text-gray-400 text-2xl whitespace-no-wrap"
+                                        class="hover:text-gray-400 text-2xl whitespace-no-wrap"
                                         >Help</a
                                     >
                                 </li>
@@ -1125,7 +1126,7 @@
                         <!-- ===== Start Hero Section ===== -->
                         <section class="container hero-section mx-auto px-2 flex items-center">
                             <!-- Categories -->
-                            <div class="mr-4 w-full">
+                            <div class="hero-left-categories-container mr-4">
                                 <nav class="side-nav hero-nav-categories">
                                     <div class="sidebar-navigation">
                                         <ul>
@@ -1188,7 +1189,10 @@
                                                 </ul>
                                             </li>
                                             <li><a href="#">Beauty & Health</a></li>
+                                            <li><a href="#">Beauty & Health</a></li>
                                             <li><a href="#">Home Appliance</a></li>
+                                            <li><a href="#">Home Appliance</a></li>
+
                                             <li>
                                                 <a href="#">
                                                     Food
@@ -1228,323 +1232,385 @@
                                     </div>
                                 </nav>
                             </div>
-                            <!-- Slider and Product -->
-                            <div class="heroslider-section w-full flex items-center">
-                                <!-- Slider -->
-                                <div class="w-9/12">
-                                    <div
-                                        class="heroslider-content w-full mb-8 owl-carousel owl-theme"
-                                    >
-                                        <!-- 1 -->
-                                        <a href="#">
-                                            <div
-                                                class="heroslider-content__slide"
-                                                style="
-                                                    background-image: url('./assets/img/slider/slider1.jpg');
-                                                "
-                                            ></div>
-                                        </a>
-                                        <!-- 2 -->
-                                        <a href="#">
-                                            <div
-                                                class="heroslider-content__slide"
-                                                style="
-                                                    background-image: url('./assets/img/slider/slider2.jpg');
-                                                "
-                                            ></div>
-                                        </a>
-                                        <!-- 3 -->
-                                        <a href="#">
-                                            <div
-                                                class="heroslider-content__slide"
-                                                style="
-                                                    background-image: url('./assets/img/slider/slider4.jpg');
-                                                "
-                                            >
-                                                <div class="heroslider-content__slide--content">
-                                                    <h2
-                                                        class="text-right uppercase mb-0 text-gray-800"
-                                                    >
-                                                        electronic<br />deals
-                                                    </h2>
-                                                    <div class="skew-box-group">
-                                                        <span
-                                                            class="skew-box text-3xl text-white bg-gray-800 inline-block mb-4 py-3 px-4"
-                                                            >Exclusive COUPON</span
-                                                        >
-                                                        <h3 class="sale-off skew-box">
-                                                            <span>$100</span>off
-                                                        </h3>
-                                                    </div>
-                                                    <button class="btn-one">View All Now</button>
-                                                </div>
-                                                <p
-                                                    class="absolute bottom-4 right-4 text-lg tracking-wider text-gray-400 mb-0"
+
+                            <!-- Sliders -->
+                            <div class="hero-right-sliders-container flex flex-col">
+                                <!-- Slider and Product -->
+                                <div class="heroslider-section w-full flex items-center">
+                                    <!-- Slider -->
+                                    <div class="w-9/12">
+                                        <div
+                                            class="heroslider-content w-full mb-8 owl-carousel owl-theme"
+                                        >
+                                            <!-- 1 -->
+                                            <a href="#">
+                                                <div
+                                                    class="heroslider-content__slide"
+                                                    style="
+                                                        background-image: url('./assets/img/slider/slider1.jpg');
+                                                    "
+                                                ></div>
+                                            </a>
+                                            <!-- 2 -->
+                                            <a href="#">
+                                                <div
+                                                    class="heroslider-content__slide"
+                                                    style="
+                                                        background-image: url('./assets/img/slider/slider2.jpg');
+                                                    "
+                                                ></div>
+                                            </a>
+                                            <!-- 3 -->
+                                            <a href="#">
+                                                <div
+                                                    class="heroslider-content__slide"
+                                                    style="
+                                                        background-image: url('./assets/img/slider/slider4.jpg');
+                                                    "
                                                 >
-                                                    * Only 200 Available
-                                                </p>
+                                                    <div class="heroslider-content__slide--content">
+                                                        <h2
+                                                            class="text-right uppercase mb-0 text-gray-800"
+                                                        >
+                                                            electronic<br />deals
+                                                        </h2>
+                                                        <div class="skew-box-group">
+                                                            <span
+                                                                class="skew-box text-3xl text-white bg-gray-800 inline-block mb-4 py-3 px-4"
+                                                                >Exclusive COUPON</span
+                                                            >
+                                                            <h3 class="sale-off skew-box">
+                                                                <span>$100</span>off
+                                                            </h3>
+                                                        </div>
+                                                        <button class="btn-one">
+                                                            View All Now
+                                                        </button>
+                                                    </div>
+                                                    <p
+                                                        class="absolute bottom-4 right-4 text-lg tracking-wider text-gray-400 mb-0"
+                                                    >
+                                                        * Only 200 Available
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- FlashDeal -->
+                                    <div class="w-3/12 pl-8">
+                                        <div
+                                            class="heroflash-product mb-8 owl-carousel owl-theme"
+                                            data-toggle="owl"
+                                        >
+                                            <div
+                                                class="heroflash-product-slide p-6 flex flex-col items-center"
+                                            >
+                                                <h3 class="font-bold text-gray-800">Flash Deals</h3>
+                                                <div class="heroflash-product-default mb-0">
+                                                    <figure class="mb-10">
+                                                        <a
+                                                            href="product.html"
+                                                            class="overflow-ellipsis overflow-hidden"
+                                                        >
+                                                            <img
+                                                                src="./assets/img/flashdeal1.jpg"
+                                                                class="h-auto w-auto m-auto"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div
+                                                        class="heroflash-product-details flex flex-col items-center justify-center"
+                                                    >
+                                                        <h2
+                                                            class="heroflash-product-title overflow-hidden overflow-ellipsis"
+                                                        >
+                                                            <a
+                                                                href="product.html"
+                                                                class="text-gray-800 font-medium"
+                                                                >1080p Wifi IP Camera</a
+                                                            >
+                                                        </h2>
+                                                        <div
+                                                            class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
+                                                        >
+                                                            <div
+                                                                class="heroflash-product-ratings w-full text-center"
+                                                            >
+                                                                <span
+                                                                    class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
+                                                                    style="width: 100%"
+                                                                >
+                                                                </span
+                                                                ><!-- End .ratings -->
+                                                            </div>
+                                                            <!-- End .product-ratings -->
+                                                        </div>
+                                                        <!-- End .product-container -->
+                                                        <div class="heroflash-price-box">
+                                                            <span class="heroflash-product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="heroflash-old-price"
+                                                                >$59.00</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                                <div
+                                                    class="heroflash-count-down-panel text-center mt-2"
+                                                >
+                                                    <h4 class="font-normal m-0">
+                                                        OFFER ENDS IN:
+                                                        <span
+                                                            class="countdown"
+                                                            data-plugin-countdown=""
+                                                            data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
+                                                            ><span class="days"
+                                                                ><span class="font-bold">237</span>
+                                                                <div class="inline uppercase">
+                                                                    DAYS,
+                                                                </div>
+                                                            </span>
+                                                            <span class="hours"
+                                                                ><span class="font-bold">20:</span>
+                                                            </span>
+                                                            <span class="minutes"
+                                                                ><span class="font-bold">26:</span>
+                                                            </span>
+                                                            <span class="seconds"
+                                                                ><span class="font-bold">06</span>
+                                                            </span>
+                                                        </span>
+                                                    </h4>
+                                                </div>
                                             </div>
-                                        </a>
+                                            <div
+                                                class="heroflash-product-slide p-6 flex flex-col items-center"
+                                            >
+                                                <h3 class="font-bold text-gray-800">Flash Deals</h3>
+                                                <div class="heroflash-product-default mb-0">
+                                                    <figure class="mb-10">
+                                                        <a
+                                                            href="product.html"
+                                                            class="overflow-ellipsis overflow-hidden"
+                                                        >
+                                                            <img
+                                                                src="./assets/img/flashdeal1.jpg"
+                                                                class="h-auto w-auto m-auto"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div
+                                                        class="heroflash-product-details flex flex-col items-center justify-center"
+                                                    >
+                                                        <h2
+                                                            class="heroflash-product-title overflow-hidden overflow-ellipsis"
+                                                        >
+                                                            <a
+                                                                href="product.html"
+                                                                class="text-gray-800 font-medium"
+                                                                >1080p Wifi IP Camera</a
+                                                            >
+                                                        </h2>
+                                                        <div
+                                                            class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
+                                                        >
+                                                            <div
+                                                                class="heroflash-product-ratings w-full text-center"
+                                                            >
+                                                                <span
+                                                                    class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
+                                                                    style="width: 100%"
+                                                                >
+                                                                </span
+                                                                ><!-- End .ratings -->
+                                                            </div>
+                                                            <!-- End .product-ratings -->
+                                                        </div>
+                                                        <!-- End .product-container -->
+                                                        <div class="heroflash-price-box">
+                                                            <span class="heroflash-product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="heroflash-old-price"
+                                                                >$59.00</span
+                                                            >
+
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                                <div
+                                                    class="heroflash-count-down-panel text-center mt-2"
+                                                >
+                                                    <h4 class="font-normal m-0">
+                                                        OFFER ENDS IN:
+                                                        <span
+                                                            class="countdown"
+                                                            data-plugin-countdown=""
+                                                            data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
+                                                            ><span class="days"
+                                                                ><span class="font-bold">237</span>
+                                                                <div class="inline uppercase">
+                                                                    DAYS,
+                                                                </div>
+                                                            </span>
+                                                            <span class="hours"
+                                                                ><span class="font-bold">20:</span>
+                                                            </span>
+                                                            <span class="minutes"
+                                                                ><span class="font-bold">26:</span>
+                                                            </span>
+                                                            <span class="seconds"
+                                                                ><span class="font-bold">06</span>
+                                                            </span>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="heroflash-product-slide p-6 flex flex-col items-center"
+                                            >
+                                                <h3 class="font-bold text-gray-800">Flash Deals</h3>
+                                                <div class="heroflash-product-default mb-0">
+                                                    <figure class="mb-10">
+                                                        <a
+                                                            href="product.html"
+                                                            class="overflow-ellipsis overflow-hidden"
+                                                        >
+                                                            <img
+                                                                src="./assets/img/flashdeal1.jpg"
+                                                                class="h-auto w-auto m-auto"
+                                                            />
+                                                        </a>
+                                                    </figure>
+                                                    <div
+                                                        class="heroflash-product-details flex flex-col items-center justify-center"
+                                                    >
+                                                        <h2
+                                                            class="heroflash-product-title overflow-hidden overflow-ellipsis"
+                                                        >
+                                                            <a
+                                                                href="product.html"
+                                                                class="text-gray-800 font-medium"
+                                                                >1080p Wifi IP Camera</a
+                                                            >
+                                                        </h2>
+                                                        <div
+                                                            class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
+                                                        >
+                                                            <div
+                                                                class="heroflash-product-ratings w-full text-center"
+                                                            >
+                                                                <span
+                                                                    class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
+                                                                    style="width: 100%"
+                                                                >
+                                                                </span
+                                                                ><!-- End .ratings -->
+                                                            </div>
+                                                            <!-- End .product-ratings -->
+                                                        </div>
+                                                        <!-- End .product-container -->
+                                                        <div class="heroflash-price-box">
+                                                            <span class="heroflash-product-price"
+                                                                >$49.00</span
+                                                            >
+                                                            <span class="heroflash-old-price"
+                                                                >$59.00</span
+                                                            >
+                                                        </div>
+                                                        <!-- End .price-box -->
+                                                    </div>
+                                                    <!-- End .product-details -->
+                                                </div>
+                                                <div
+                                                    class="heroflash-count-down-panel text-center mt-2"
+                                                >
+                                                    <h4 class="font-normal m-0">
+                                                        OFFER ENDS IN:
+                                                        <span
+                                                            class="countdown"
+                                                            data-plugin-countdown=""
+                                                            data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
+                                                            ><span class="days"
+                                                                ><span class="font-bold">237</span>
+                                                                <div class="inline uppercase">
+                                                                    DAYS,
+                                                                </div>
+                                                            </span>
+                                                            <span class="hours"
+                                                                ><span class="font-bold">20:</span>
+                                                            </span>
+                                                            <span class="minutes"
+                                                                ><span class="font-bold">26:</span>
+                                                            </span>
+                                                            <span class="seconds"
+                                                                ><span class="font-bold">06</span>
+                                                            </span>
+                                                        </span>
+                                                    </h4>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <!-- FlashDeal -->
-                                <div class="w-3/12 pl-8">
-                                    <div
-                                        class="heroflash-product mb-8 owl-carousel owl-theme"
-                                        data-toggle="owl"
-                                    >
-                                        <div
-                                            class="heroflash-product-slide p-6 flex flex-col items-center"
-                                        >
-                                            <h3 class="font-bold text-gray-800">Flash Deals</h3>
-                                            <div class="heroflash-product-default mb-0">
-                                                <figure class="mb-10">
-                                                    <a
-                                                        href="product.html"
-                                                        class="overflow-ellipsis overflow-hidden"
-                                                    >
-                                                        <img
-                                                            src="./assets/img/flashdeal1.jpg"
-                                                            class="h-auto w-auto m-auto"
-                                                        />
-                                                    </a>
-                                                </figure>
-                                                <div
-                                                    class="heroflash-product-details flex flex-col items-center justify-center"
-                                                >
-                                                    <h2
-                                                        class="heroflash-product-title overflow-hidden overflow-ellipsis"
-                                                    >
-                                                        <a
-                                                            href="product.html"
-                                                            class="text-gray-800 font-medium"
-                                                            >1080p Wifi IP Camera</a
-                                                        >
-                                                    </h2>
-                                                    <div
-                                                        class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
-                                                    >
-                                                        <div
-                                                            class="heroflash-product-ratings w-full text-center"
-                                                        >
-                                                            <span
-                                                                class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
-                                                                style="width: 100%"
-                                                            >
-                                                            </span
-                                                            ><!-- End .ratings -->
-                                                        </div>
-                                                        <!-- End .product-ratings -->
-                                                    </div>
-                                                    <!-- End .product-container -->
-                                                    <div class="heroflash-price-box">
-                                                        <span class="heroflash-product-price"
-                                                            >$49.00</span
-                                                        >
-                                                        <span class="heroflash-old-price"
-                                                            >$59.00</span
-                                                        >
-                                                    </div>
-                                                    <!-- End .price-box -->
-                                                </div>
-                                                <!-- End .product-details -->
-                                            </div>
-                                            <div
-                                                class="heroflash-count-down-panel text-center mt-2"
-                                            >
-                                                <h4 class="font-normal m-0">
-                                                    OFFER ENDS IN:
-                                                    <span
-                                                        class="countdown"
-                                                        data-plugin-countdown=""
-                                                        data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
-                                                        ><span class="days"
-                                                            ><span class="font-bold">237</span>
-                                                            <div class="inline uppercase">
-                                                                DAYS,
-                                                            </div>
-                                                        </span>
-                                                        <span class="hours"
-                                                            ><span class="font-bold">20:</span>
-                                                        </span>
-                                                        <span class="minutes"
-                                                            ><span class="font-bold">26:</span>
-                                                        </span>
-                                                        <span class="seconds"
-                                                            ><span class="font-bold">06</span>
-                                                        </span>
-                                                    </span>
-                                                </h4>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="heroflash-product-slide p-6 flex flex-col items-center"
-                                        >
-                                            <h3 class="font-bold text-gray-800">Flash Deals</h3>
-                                            <div class="heroflash-product-default mb-0">
-                                                <figure class="mb-10">
-                                                    <a
-                                                        href="product.html"
-                                                        class="overflow-ellipsis overflow-hidden"
-                                                    >
-                                                        <img
-                                                            src="./assets/img/flashdeal1.jpg"
-                                                            class="h-auto w-auto m-auto"
-                                                        />
-                                                    </a>
-                                                </figure>
-                                                <div
-                                                    class="heroflash-product-details flex flex-col items-center justify-center"
-                                                >
-                                                    <h2
-                                                        class="heroflash-product-title overflow-hidden overflow-ellipsis"
-                                                    >
-                                                        <a
-                                                            href="product.html"
-                                                            class="text-gray-800 font-medium"
-                                                            >1080p Wifi IP Camera</a
-                                                        >
-                                                    </h2>
-                                                    <div
-                                                        class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
-                                                    >
-                                                        <div
-                                                            class="heroflash-product-ratings w-full text-center"
-                                                        >
-                                                            <span
-                                                                class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
-                                                                style="width: 100%"
-                                                            >
-                                                            </span
-                                                            ><!-- End .ratings -->
-                                                        </div>
-                                                        <!-- End .product-ratings -->
-                                                    </div>
-                                                    <!-- End .product-container -->
-                                                    <div class="heroflash-price-box">
-                                                        <span class="heroflash-product-price"
-                                                            >$49.00</span
-                                                        >
-                                                        <span class="heroflash-old-price"
-                                                            >$59.00</span
-                                                        >
 
-                                                        >
-                                                    </div>
-                                                    <!-- End .price-box -->
-                                                </div>
-                                                <!-- End .product-details -->
-                                            </div>
-                                            <div
-                                                class="heroflash-count-down-panel text-center mt-2"
-                                            >
-                                                <h4 class="font-normal m-0">
-                                                    OFFER ENDS IN:
-                                                    <span
-                                                        class="countdown"
-                                                        data-plugin-countdown=""
-                                                        data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
-                                                        ><span class="days"
-                                                            ><span class="font-bold">237</span>
-                                                            <div class="inline uppercase">
-                                                                DAYS,
-                                                            </div>
-                                                        </span>
-                                                        <span class="hours"
-                                                            ><span class="font-bold">20:</span>
-                                                        </span>
-                                                        <span class="minutes"
-                                                            ><span class="font-bold">26:</span>
-                                                        </span>
-                                                        <span class="seconds"
-                                                            ><span class="font-bold">06</span>
-                                                        </span>
+                                <!--  Start Shop Slide Section -->
+                                <div class="w-full">
+                                    <div class="flex">
+                                        <div class="w-1/2 mb-4 pr-6">
+                                            <div class="shop-slide shop-slide-banner">
+                                                <a href="#">
+                                                    <figure class="shop-slide__media">
+                                                        <img
+                                                            src="./assets/img/banners/banners01.jpg"
+                                                            alt="shop-slide"
+                                                        />
+                                                    </figure>
+                                                </a>
+                                                <div class="shop-slide__content">
+                                                    <h4 class="shop-slide__name">Evaly Food</h4>
+                                                    <span class="shop-slide__count">
+                                                        <span>6</span> Products
                                                     </span>
-                                                </h4>
+                                                    <a href="#" class="btn btn-underline"
+                                                        >Shop Now<span
+                                                            class="material-icons-outlined"
+                                                        >
+                                                            arrow_right_alt
+                                                        </span></a
+                                                    >
+                                                </div>
                                             </div>
                                         </div>
-                                        <div
-                                            class="heroflash-product-slide p-6 flex flex-col items-center"
-                                        >
-                                            <h3 class="font-bold text-gray-800">Flash Deals</h3>
-                                            <div class="heroflash-product-default mb-0">
-                                                <figure class="mb-10">
-                                                    <a
-                                                        href="product.html"
-                                                        class="overflow-ellipsis overflow-hidden"
-                                                    >
+                                        <div class="w-1/2 mb-4 px-6">
+                                            <div class="shop-slide shop-slide-banner">
+                                                <a href="#">
+                                                    <figure class="shop-slide__media">
                                                         <img
-                                                            src="./assets/img/flashdeal1.jpg"
-                                                            class="h-auto w-auto m-auto"
+                                                            src="./assets/img/banners/banners02.jpg"
+                                                            alt="shop-slide"
                                                         />
-                                                    </a>
-                                                </figure>
-                                                <div
-                                                    class="heroflash-product-details flex flex-col items-center justify-center"
-                                                >
-                                                    <h2
-                                                        class="heroflash-product-title overflow-hidden overflow-ellipsis"
-                                                    >
-                                                        <a
-                                                            href="product.html"
-                                                            class="text-gray-800 font-medium"
-                                                            >1080p Wifi IP Camera</a
-                                                        >
-                                                    </h2>
-                                                    <div
-                                                        class="heroflash-ratings-container cursor-pointer relative inline-block w-full"
-                                                    >
-                                                        <div
-                                                            class="heroflash-product-ratings w-full text-center"
-                                                        >
-                                                            <span
-                                                                class="heroflash-ratings absolute top-0 left-0 whitespace-nowrap"
-                                                                style="width: 100%"
-                                                            >
-                                                            </span
-                                                            ><!-- End .ratings -->
-                                                        </div>
-                                                        <!-- End .product-ratings -->
-                                                    </div>
-                                                    <!-- End .product-container -->
-                                                    <div class="heroflash-price-box">
-                                                        <span class="heroflash-product-price"
-                                                            >$49.00</span
-                                                        >
-                                                        <span class="heroflash-old-price"
-                                                            >$59.00</span
-                                                        >
-                                                    </div>
-                                                    <!-- End .price-box -->
-                                                </div>
-                                                <!-- End .product-details -->
-                                            </div>
-                                            <div
-                                                class="heroflash-count-down-panel text-center mt-2"
-                                            >
-                                                <h4 class="font-normal m-0">
-                                                    OFFER ENDS IN:
-                                                    <span
-                                                        class="countdown"
-                                                        data-plugin-countdown=""
-                                                        data-plugin-options="{'date': '2020/01/01 00:00:00', 'numberClass': 'font-bold'}"
-                                                        ><span class="days"
-                                                            ><span class="font-bold">237</span>
-                                                            <div class="inline uppercase">
-                                                                DAYS,
-                                                            </div>
-                                                        </span>
-                                                        <span class="hours"
-                                                            ><span class="font-bold">20:</span>
-                                                        </span>
-                                                        <span class="minutes"
-                                                            ><span class="font-bold">26:</span>
-                                                        </span>
-                                                        <span class="seconds"
-                                                            ><span class="font-bold">06</span>
-                                                        </span>
+                                                    </figure>
+                                                </a>
+                                                <div class="shop-slide__content">
+                                                    <h4 class="shop-slide__name">DARAZ MALL</h4>
+                                                    <span class="shop-slide__count">
+                                                        <span>56</span> Products
                                                     </span>
-                                                </h4>
+                                                    <a href="#" class="btn btn-underline"
+                                                        >Shop Now<span
+                                                            class="material-icons-outlined"
+                                                        >
+                                                            arrow_right_alt
+                                                        </span></a
+                                                    >
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -1552,82 +1618,6 @@
                             </div>
                         </section>
                         <!-- ===== End Hero Section ===== -->
-
-                        <!-- ===== Start Shop Slide Section ===== -->
-                        <section class="container mx-auto px-2 flex flex-col items-center">
-                            <div class="flex">
-                                <div class="w-2/5 mb-4 pr-6">
-                                    <div class="shop-slide shop-slide-banner">
-                                        <a href="#">
-                                            <figure class="shop-slide__media">
-                                                <img
-                                                    src="./assets/img/banners/banners01.jpg"
-                                                    alt="shop-slide"
-                                                />
-                                            </figure>
-                                        </a>
-                                        <div class="shop-slide__content">
-                                            <h4 class="shop-slide__name">Evaly Food</h4>
-                                            <span class="shop-slide__count">
-                                                <span>6</span> Products
-                                            </span>
-                                            <a href="#" class="btn btn-underline"
-                                                >Shop Now<span class="material-icons-outlined">
-                                                    arrow_right_alt
-                                                </span></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-2/5 mb-4 px-6">
-                                    <div class="shop-slide shop-slide-banner">
-                                        <a href="#">
-                                            <figure class="shop-slide__media">
-                                                <img
-                                                    src="./assets/img/banners/banners02.jpg"
-                                                    alt="shop-slide"
-                                                />
-                                            </figure>
-                                        </a>
-                                        <div class="shop-slide__content">
-                                            <h4 class="shop-slide__name">DARAZ MALL</h4>
-                                            <span class="shop-slide__count">
-                                                <span>56</span> Products
-                                            </span>
-                                            <a href="#" class="btn btn-underline"
-                                                >Shop Now<span class="material-icons-outlined">
-                                                    arrow_right_alt
-                                                </span></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="w-1/5 mb-4 pl-6">
-                                    <div class="shop-slide shop-slide-banner">
-                                        <a href="#">
-                                            <figure class="shop-slide__media">
-                                                <img
-                                                    src="./assets/img/banners/a.jpg"
-                                                    alt="shop-slide"
-                                                />
-                                            </figure>
-                                        </a>
-                                        <div class="shop-slide__content">
-                                            <h4 class="shop-slide__name">ALL SHOPS</h4>
-                                            <span class="shop-slide__count">
-                                                <span>1M</span> Products
-                                            </span>
-                                            <a href="#" class="btn btn-underline text-black"
-                                                >View All<span class="material-icons-outlined">
-                                                    arrow_right_alt
-                                                </span></a
-                                            >
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!-- ===== End Shop Slide Section ===== -->
 
                         <!-- ===== Start Shop Section ===== -->
                         <section
